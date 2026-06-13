@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="executing_right_now">Команда выполняется</string>
     <string name="basal_value_below_minimum">значение базала ниже минимума. профиль не создан!</string>
@@ -8,7 +8,33 @@
     <string name="short_status_temp_basal">ВремБаз %1$s</string>
     <string name="short_status_battery">Бат: %1$d%%</string>
     <string name="short_status_not_initialized">Помпа не иниц</string>
+    <string name="metadata_warning_different_device">Настройки были созданы на другом устройстве. Это нормально, если вы импортируете с более старого или другого телефона, но убедитесь, что импортированные настройки корректны!</string>
+    <string name="metadata_warning_old_export">Импортированным настройкам уже %1$s дней! Возможно, у вас есть более свежие настройки или вы выбрали неверный файл? Не забывайте регулярно экспортировать настройки!</string>
+    <string name="metadata_warning_date_format">Неверный формат даты и времени!</string>
+    <string name="metadata_warning_different_version">Настройки с другой минорной версии приложения. Это нормально, если вы импортируете после обновления, но после импорта проверьте, корректны ли настройки.</string>
+    <string name="metadata_urgent_different_version">Настройки с другой мажорной версии приложения. Мажорные версии существенно различаются и могут иметь несовместимые настройки! После импорта обязательно проверьте, корректны ли настройки.</string>
+    <string name="prefdecrypt_settings_tampered">Файл настроек изменен</string>
+    <string name="prefdecrypt_settings_secure">Файл настроек защищен</string>
+    <string name="prefdecrypt_settings_unencrypted">Используется небезопасный, незашифрованный формат настроек</string>
+    <string name="prefdecrypt_wrong_json">Ошибка формата JSON, отсутствует обязательное поле (format, content, metadata или security)</string>
+    <string name="prefdecrypt_wrong_password">Ошибка расшифровки, указанный пароль не может расшифровать файл</string>
+    <string name="prefdecrypt_issue_missing_file_hash">Отсутствует контрольная сумма (hash) файла, невозможно проверить подлинность настроек!</string>
+    <string name="prefdecrypt_issue_modified">Файл был изменен после экспорта!</string>
+    <string name="prefdecrypt_issue_parsing">Ошибка расшифровки, не удалось разобрать настройки!</string>
+    <string name="prefdecrypt_issue_wrong_pass">Ошибка расшифровки, предоставленный пароль неверен или файл настроек был изменен! Возможно, импортируемый файл был экспортирован с другим мастер-паролем.</string>
+    <string name="prefdecrypt_issue_wrong_format">Отсутствует конфигурация шифрования, формат настроек неверен!</string>
+    <string name="prefdecrypt_issue_wrong_algorithm">Неподдерживаемый или не указанный алгоритм шифрования!</string>
+    <string name="metadata_label_format">Формат файла</string>
+    <string name="metadata_label_created_at">Создано</string>
+    <string name="metadata_label_aaps_version">Версия AAPS</string>
+    <string name="metadata_label_aaps_flavour">Вариант сборки</string>
+    <string name="metadata_label_device_name">Имя пациента экспортирующего устройства</string>
+    <string name="metadata_label_device_model">Модель экспортирующего устройства</string>
+    <string name="metadata_label_encryption">Шифрование файла</string>
+    <string name="metadata_format_new">Новый зашифрованный формат</string>
+    <string name="metadata_format_other">Неизвестный формат экспорта</string>
     <string name="error_accessing_filesystem_select_aaps_directory_properly">Ошибка доступа к файловой системе. Выберите каталог AAPS корректно.</string>
+    <string name="storage_google_drive">Google Диск</string>
     <string name="backup_to_google_drive">Резервное копирование на Google Drive</string>
     <string name="csv_upload_failed">Не удалось загрузить CSV записей пользователя в облачное хранилище</string>
     <string name="csv_upload_error">Произошла ошибка при загрузке CSV в облако</string>

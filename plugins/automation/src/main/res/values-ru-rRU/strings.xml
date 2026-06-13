@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="automation_short">Авто</string>
     <string name="automation">Автоматизация</string>
@@ -80,6 +80,7 @@
     <string name="short_avgdelta">краткосрочная средняя дельта</string>
     <string name="long_avgdelta">Долгосрочная средняя дельта</string>
     <string name="delta">изменение</string>
+    <string name="locationis">Местоположение: %1$s %2$s</string>
     <string name="location_inside">Когда вы находитесь внутри зоны</string>
     <string name="location_outside">Когда вы вне зоны</string>
     <string name="location_going_in">Когда вы входите в названную зону</string>
@@ -90,6 +91,7 @@
     <string name="temptargetcompared">Врем цель %1$s</string>
     <string name="btdevicecompared">Подключение Bluetooth к устройству %1$s %2$s</string>
     <string name="btdevice">Соединение с устройством Bluetooth </string>
+    <string name="wifissidcompared">WiFi SSID: %1$s %2$s</string>
     <string name="autosenscompared">Автосенс %1$s %2$s %%</string>
     <string name="autosenslabel">Автосенс %</string>
     <string name="deltacompared">%3$s%1$s%2$s</string>

@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="enable_tbr_over_notification">Включить уведомление об окончании временной скорости базала TBR\n(настройка помпы)</string>
     <string name="disable_tbr_over_notification">Отключить уведомление об окончании временной скорости базала TBR\n(настройка помпы)</string>
@@ -47,6 +47,7 @@
     <string name="max_recovery_duration">Макс продолжительность восстановления [s]</string>
     <string name="min_recovery_duration">Мин. продолжительность восстановления [s]</string>
     <string name="pump_alert">Оповещение помпы</string>
+    <string name="last_connection">Последнее подключение: %1$s (%2$s)</string>
     <string name="unpair">Разъединение</string>
     <string name="reset_pairing">Сбросить информацию о сопряжении?</string>
     <string name="reservoir_level">Уровень резервуара</string>

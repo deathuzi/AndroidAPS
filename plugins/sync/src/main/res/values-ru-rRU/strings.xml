@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="connection_settings_title">Параметры подключения</string>
     <string name="description_ns_client">Синхронизирует данные с Nightscout при помощи API v1</string>
@@ -34,6 +34,8 @@
     <string name="calibration_sent">Калибровка отправлена на xDrip+</string>
     <string name="xdrip_local_broadcasts_summary">Отправлять данные о глюкозе и терапии на xDrip+. Источником данных должен быть выбран \"xDrip+ Sync Follower\" а в настройках между приложениями надо включить - Принимать глюкозу/терапию</string>
     <string name="xdrip_local_broadcasts_title">Включить трансляции для xDrip+.</string>
+    <string name="tizen">Внешние приложения-компаньоны</string>
+    <string name="tizen_description">Включает передачу данных в различные внешние приложения-компаньоны</string>
     <string name="garmin_description">Подключение к устройству Garmin (Fenix, Edge, …)</string>
     <string name="garmin_local_http_server_port">Порт локального HTTP сервера</string>
     <string name="garmin_local_http_server">Локальный HTTP сервер</string>
@@ -44,6 +46,8 @@
     <string name="quick_wizard_not_available">Выбранный мастер быстрого доступа больше недоступен, обновите плитку</string>
     <string name="quick_wizard_message">Мастер: %1$s\nИнсулин: %2$.2fЕд\nУгл: %3$dg</string>
     <string name="user_action_not_available">Выбранное пользовательское действие %1$s более недоступно, обновите плитку</string>
+    <string name="scene_not_available">Сцена %1$s больше не доступна, обновите плитку</string>
+    <string name="wear_remote_insulin_not_allowed_in_client">Команды удаленного введения инсулина отключены в клиентском режиме</string>
     <string name="wear_action_tempt_cancel_message">Отменить действие ВЦ?</string>
     <string name="wear_action_tempt_unit_error">На часах и телефоне различные единицы измерения!</string>
     <string name="wear_action_tempt_zero_message">Нулевая ВЦ - отменить выполнение Временной Цели?</string>
@@ -63,9 +67,12 @@
     <string name="wear_new_custom_watchface_exported">Пользовательский шаблон циферблата экспортирован</string>
     <string name="resend_all_data">Повторить отправку всех данных</string>
     <string name="open_settings_on_wear">Открыть настройки на часах</string>
+    <string name="wear_import_custom_watchface_title">Выберите пользовательский циферблат</string>
     <string name="cwf_infos_pref_locked">Список настроек, блокируемых циферблатом</string>
     <string name="cwf_infos_pref_required">Список настроек, требующихся для циферблата</string>
     <string name="cwf_infos_view_title">Список полей, входящих в циферблат</string>
+    <string name="enabled">Включено</string>
+    <string name="disabled">Отключено</string>
     <string name="pump_fetching_data">пытаюсь получить данные с помпы.</string>
     <string name="pump_old_data">TDD: До сих пор старые данные! Невозможно загрузить с помпы.</string>
     <string name="units_short">ед</string>
@@ -95,13 +102,46 @@
     <string name="full_xdrip_sync_comment">Полная синхронизация? Это может занять длительное время и до завершения вы не увидите новые данные в xDrip+.</string>
     <string name="wear_action_loop_state_unauthorized">Повторите попытку.</string>
     <string name="wear_action_loop_state_invalid">Запрошено неверное состояние цикла</string>
+    <string name="wear_action_running_mode_title">Режим бега</string>
     <string name="wear_action_loop_state_changed_with_duration">%1$s\n Продолжительность: %2$d мин</string>
+    <string name="wear_action_loop_state_now_closed">Закрытый цикл</string>
+    <string name="wear_action_loop_state_now_lgs">Приостановка при низком уровне глюкозы</string>
+    <string name="wear_action_loop_state_now_open">Открытый цикл</string>
+    <string name="wear_action_loop_state_now_suspended">Цикл приостановлен</string>
+    <string name="wear_action_loop_state_now_resumed">Цикл возобновлен</string>
+    <string name="wear_action_loop_state_now_disabled">Отключить Цикл</string>
     <string name="wear_action_loop_state_now_pump_suspended">Работа помпы приостановлена</string>
     <string name="wear_action_loop_state_now_superbolus">Суперболюс</string>
     <string name="wear_action_loop_state_now_invalid">Недопустимое состояние</string>
+    <string name="wear_action_loop_state_now_pump_disconnected">Отсоединить помпу</string>
+    <string name="wear_action_loop_state_now_pump_reconnected">Подключить помпу</string>
     <string name="garmin_request_key">Ключ запроса</string>
+    <string name="smscommunicator">SMS-коммуникатор</string>
+    <string name="description_sms_communicator">Удаленное управление AAPS с помощью SMS-команд.</string>
+    <string name="smscommunicator_code_from_authenticator_for">из приложения Authenticator для: %1$s, затем PIN</string>
+    <string name="smscommunicator_tab_otp_label">Настройка Authenticator</string>
+    <string name="smscommunicator_code_verify_label">Код для проверки:</string>
+    <string name="smscommunicator_code_verify_info">Код проверки состоит из 6 цифр, отображаемых приложением Authenticator (называемых OTP), за которыми следуют 3 или более цифр обязательного PIN-кода.</string>
     <string name="smscommunicator_otp_reset_btn">Сбросить аутентификаторы</string>
     <string name="smscommunicator_otp_reset_title">Сбросить ключ</string>
+    <string name="smscommunicator_otp_reset_prompt">Вы уверены, что хотите сбросить ключ Authenticator? Это сделает все настроенные Authenticator недействительными, и вам нужно будет настроить их заново.</string>
+    <string name="smscommunicator_otp_step1_install_header">1. Установите Authenticator</string>
+    <string name="smscommunicator_otp_step2_provisioning_header">2. Отсканируйте код для настройки OTP-кодов AAPS</string>
+    <string name="smscommunicator_otp_step3_test_header">3. Проверьте одноразовый пароль (OTP)</string>
+    <string name="smscommunicator_otp_reset_header">Сброс Authenticator</string>
+    <string name="smscommunicator_otp_install_info">На каждом телефоне последователя установите приложение Authenticator, которое поддерживает токены TOTP RFC 6238. Популярные бесплатные приложения:\n • Authy\n • Google Authenticator\n • LastPass Authenticator\n • FreeOTP Authenticator</string>
+    <string name="smscommunicator_otp_reset_warning">При сбросе Authenticator все настроенные Authenticator станут недействительными. Вам нужно будет настроить их заново!</string>
+    <string name="smscommunicator_otp_verification_ivalid_size">НЕВЕРНЫЙ РАЗМЕР!</string>
+    <string name="smscommunicator_otp_verification_wrong_pin">НЕВЕРНЫЙ PIN</string>
+    <string name="smscommunicator_carbs_reply_with_code">Чтобы ввести %1$d г углеводов в %2$s, ответьте кодом %3$s</string>
+    <string name="smscommunicator_basal_pct_reply_with_code">Чтобы запустить базал %1$d%% на %2$d мин, ответьте кодом %3$s</string>
+    <string name="smscommunicator_suspend_reply_with_code">Чтобы приостановить цикл на %1$d мин, ответьте кодом %2$s</string>
+    <string name="smscommunicator_loop_resume_reply_with_code">Чтобы возобновить цикл, ответьте кодом %1$s</string>
+    <string name="smscommunicator_loop_disable_reply_with_code">Чтобы отключить цикл, ответьте кодом %1$s</string>
+    <string name="smscommunicator_restart_reply_with_code">Чтобы перезапустить AAPS, ответьте кодом %1$s</string>
+    <string name="smscommunicator_restarting">AAPS перезапускается</string>
+    <string name="smscommunicator_tempbasal_set">Временный базал %1$.2f Ед/ч на %2$d мин успешно запущен</string>
+    <string name="smscommunicator_extended_set">Расширенный болюс %1$.2f Ед на %2$d мин успешно запущен</string>
     <string name="smscommunicator_carbs_set">Углеводы %1$d г успешно введены</string>
     <string name="smscommunicator_carbs_failed">Ввод углеводов %1$d г не удался</string>
     <string name="smscommunicator_tempbasal_set_percent">Временный базал %1$d%% на %2$d мин успешно начат</string>

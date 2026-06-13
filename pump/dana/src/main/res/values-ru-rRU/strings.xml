@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="danars_pairingtimedout">Истекло время ожидания соединения</string>
     <string name="description_pump_dana_rs">Интеграция с помпами DANA Diabecare RS и Dana-i</string>
@@ -86,7 +86,7 @@
     <string name="option_off">Выкл.</string>
     <string name="danars_password_title">Пароль для помпы (только v1)</string>
     <string name="danar_password_title">пароль помпы</string>
-    <string name="danar_useextended_title">Для величин &gt;200% пользуйтесь пролонгированным болюсом</string>
+    <string name="danar_useextended_title">Для величин >200% пользуйтесь пролонгированным болюсом</string>
     <string name="bolus_speed_12">12 с/ЕД</string>
     <string name="bolus_speed_30">30 с/ЕД</string>
     <string name="bolus_speed_60">60 с/ЕД</string>

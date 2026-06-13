@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
     <string name="pump_status_never_contacted">Ранее не подключалась</string>
     <string name="pump_status_sleeping">Спящий режим</string>
     <string name="pump_status_waking_up">Пробуждение</string>
@@ -13,10 +12,8 @@
     <string name="medtronic_pump_encoding_4b6b_rileylink">Аппаратное кодирование 4b6b</string>
     <string name="medtronic_pump_frequency_us_ca">США &amp; Канада (916 МГц)</string>
     <string name="medtronic_pump_frequency_worldwide">Глобальная (868 Мгц)</string>
-    
     <string name="riley_link_ble_config_scan_scanning">Сканирование</string>
     <string name="riley_link_ble_config_connected_never">Никогда</string>
-    
     <string name="rileylink_status">Статус RileyLink</string>
     <string name="medtronic_pump_status">Статус помпы</string>
     <string name="rileylink_address">Адрес:</string>
@@ -35,7 +32,6 @@
     <string name="rileylink_pump_serial_number">Серийный номер помы:</string>
     <string name="rileylink_pump_frequency">Частота помпы:</string>
     <string name="rileylink_pump_frequency_value">%1$.2f МГц</string>
-    
     <string name="rileylink_state_bt_init">Инициализация Bluetooth…</string>
     <string name="rileylink_state_bt_error">Ошибка Bluetooth</string>
     <string name="rileylink_state_bt_ready">Bluetooth готов</string>
@@ -46,31 +42,16 @@
     <string name="rileylink_state_pc_error">Проблема подключения к помпе</string>
     <string name="rileylink_state_connected">Соединение установлено</string>
     <string name="rileylink_state_rl_ready">RileyLink готов</string>
-    
     <string name="rileylink_error_not_rl">Устройство не является RileyLink</string>
     <string name="rileylink_error_unreachable">RileyLink недоступен</string>
     <string name="rileylink_error_bt_disabled">Bluetooth выключен</string>
     <string name="rileylink_error_no_bt_adapter">Нет Bluetooth-адаптера</string>
     <string name="rileylink_error_tuneup_failed">Ошибка TuneUp</string>
     <string name="rileylink_error_pod_unreachable">POD недоступен</string>
-    
     <string name="rileylink_target_device_medtronic">Помпа Medtronic</string>
     <string name="rileylink_target_device_omnipod">Omnompod (Eros)</string>
-    
     <string name="riley_link_show_battery_level">Показать уровень батареи от OrangeLink/EmaLink/DiaLink</string>
     <string name="riley_link_show_battery_level_summary">НЕ РАБОТАЕТ с оригинальной RileyLink. Может не работать с альтернативными RileyLink.</string>
-    <plurals name="duration_days">
-        <item quantity="one">%1$d день</item>
-        <item quantity="few">%1$d дня</item>
-        <item quantity="many">%1$d дней</item>
-        <item quantity="other">%1$d дн</item>
-    </plurals>
-    <plurals name="duration_hours">
-        <item quantity="one">%1$d час</item>
-        <item quantity="few">%1$d ч</item>
-        <item quantity="many">%1$d ч</item>
-        <item quantity="other">%1$d ч</item>
-    </plurals>
     <string name="orange_use_scanning_level">Использовать сканирование</string>
     <string name="orange_use_scanning_level_summary">Используйте сканирование перед сопряжением с OrangeLink, это должно улучшить качество связи (при необходимости можно применять и в других клонах RileyLink)</string>
     <string name="rileylink_pair">Привязать RileyLink</string>

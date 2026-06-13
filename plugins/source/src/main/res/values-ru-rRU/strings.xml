@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="ns_client_bg">ГК с клиента Nightscout</string>
     <string name="ns_client_bg_short">ГК с NS</string>

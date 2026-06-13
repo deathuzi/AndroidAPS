@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="resetpairing">Сбросить сопряжение</string>
     <string name="diaconn_pairing">Сопражение с помпой Diaconn</string>

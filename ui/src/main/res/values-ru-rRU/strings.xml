@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="carbs_constraint_applied">применено ограничение углеводов</string>
     <string name="no_temp_basal_running">Нет временного базала</string>
@@ -54,6 +54,10 @@
     <string name="fill_prime_amount">Объем заправки</string>
     <string name="fill_pump_units_note">Объем заправки указан в единицах помпы</string>
     <string name="fill_insulin_change">Сменить инсулин на: %1$s (будет применен переключатель профиля)</string>
+    <string name="aaps_calibration_icon_label">Калибровка</string>
+    <string name="exercise_icon_label">Бег</string>
+    <string name="fitness_icon_label">Фитнес</string>
+    <string name="swim_icon_label">Плавание</string>
     <string name="hiking_icon_label">Поход</string>
     <string name="bike_icon_label">Велосипед</string>
     <string name="skateboard_icon_label">Скейтборд</string>
@@ -194,6 +198,7 @@
     <string name="show_on_watch">Показывать на часах</string>
     <string name="ecarbs_additional">Дополнительные углеводы</string>
     <string name="valid_from_to">Период действия</string>
+    <string name="carb_time">Время углеводов</string>
     <string name="save_changes_question">Сохранить изменения в этой записи?</string>
     <string name="wizard_no_insulin_required">Инсулин не требуется</string>
     <string name="carbs_constraint_violation">Углеводы ограничены ограничениями</string>
@@ -214,6 +219,16 @@
     <string name="cycle_offset">Смещение цикла</string>
     <string name="raw_tdd">Сырой TDD</string>
     <string name="cleaned_tdd">Очищенный TDD</string>
+    <string name="cleaned_tdd_explanation">TDD минус инсулин на углеводы</string>
+    <string name="cycle_lines_legend">Отдельные циклы</string>
+    <string name="cycles_found">%1$d циклов (%2$d дней)</string>
+    <string name="cycle_day1_date">День 1 = %1$s</string>
+    <string name="calculation_in_progress_percent">Расчет… %1$d%%</string>
+    <string name="not_enough_data_for_cycles">Недостаточно данных (нужно не менее 56 дней для 2 циклов)</string>
+    <string name="quick_launch_selected_actions">Выбранные действия</string>
+    <string name="quick_launch_no_dynamic_items">Нет доступных элементов</string>
+    <string name="quick_launch_category_treatment">Обработка</string>
+    <string name="quick_launch_category_care">Уход</string>
     <string name="quick_launch_category_profile">Профиль</string>
     <string name="quick_launch_category_temp_target">Пресеты временной цели</string>
     <string name="quick_launch_category_quick_wizard">Быстрый мастер</string>

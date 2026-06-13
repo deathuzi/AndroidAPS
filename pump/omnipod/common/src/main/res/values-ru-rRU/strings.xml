@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="omnipod_common_pod_management_button_activate_pod">Активировать Pod</string>
     <string name="omnipod_common_pod_management_button_deactivate_pod">Деактивировать Pod</string>
@@ -90,6 +90,7 @@
     <string name="omnipod_common_preferences_notification_uncertain_tbr_sound_enabled">Звук для неопределенных уведомлений TBR включен</string>
     <string name="omnipod_common_preferences_notification_uncertain_smb_sound_enabled">Включено звуковое оповещение о неподтвержденных SMB </string>
     <string name="omnipod_common_preferences_notification_uncertain_bolus_sound_enabled">Звук для неопределенных уведомлений болюса включен</string>
+    <string name="omnipod_common_preferences_notification_delivery_suspended_sound_enabled">Звук уведомления о приостановке подачи</string>
     <string name="omnipod_dash_use_bonding">Связать устройство на Android 15 по BT связи</string>
     <string name="omnipod_common_pod_status_no_active_pod">Нет активных Pod</string>
     <string name="omnipod_common_pod_status_waiting_for_activation">Выполняется настройка (ожидание активации Pod)</string>
@@ -110,6 +111,8 @@
     <string name="omnipod_common_cmd_set_basal_schedule">Задать расписание базала</string>
     <string name="omnipod_common_cmd_set_bolus">Настроить болюс</string>
     <string name="omnipod_common_cmd_cancel_bolus">Отменить болюс</string>
+    <string name="omnipod_common_cmd_set_tbr">Установить TBR</string>
+    <string name="omnipod_common_cmd_cancel_tbr_by_driver">Отменить TBR (драйвер)</string>
     <string name="omnipod_common_cmd_discard_pod">Завершить пользование Pod\'ом</string>
     <string name="omnipod_common_cmd_get_pod_status">Получить состояние Pod</string>
     <string name="omnipod_common_cmd_set_time">Установить Время</string>
@@ -118,9 +121,16 @@
     <string name="omnipod_common_cmd_read_pulse_log">Читать журнал импульсов</string>
     <string name="omnipod_common_cmd_suspend_delivery">Приостановить подачу</string>
     <string name="omnipod_common_cmd_resume_delivery">Возобновить подачу</string>
+    <string name="omnipod_common_cmd_cancel_tbr">Отменить TBR (пользователь)</string>
     <string name="omnipod_common_cmd_get_pod_info">Получить информацию о Pod</string>
+    <string name="omnipod_common_cmd_set_fake_suspended_tbr">Установить фиктивный приостановленный TBR</string>
+    <string name="omnipod_common_cmd_cancel_fake_suspended_tbr">Отменить фиктивный приостановленный TBR</string>
+    <string name="omnipod_common_cmd_split_tbr">Разделить TBR</string>
     <string name="omnipod_common_cmd_play_test_beep">Воспроизвести тестовый звуковой сигнал</string>
     <string name="omnipod_common_cmd_unknown_entry">Неизвестная запись</string>
+    <string name="omnipod_common_disable_suspend_alerts">Отключить оповещения о паузе</string>
+    <string name="omnipod_common_alert_finish_pairing_reminder">Напоминание о завершении сопряжения</string>
+    <string name="omnipod_common_alert_finish_setup_reminder_reminder">Напоминание о завершении настройки</string>
     <string name="omnipod_common_moments_ago">Только что</string>
     <string name="omnipod_common_less_than_a_minute_ago">Менее минуты назад</string>
     <string name="omnipod_common_composite_time">%1$s и %2$s</string>

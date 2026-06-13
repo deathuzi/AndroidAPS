@@ -1,7 +1,6 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
-    <string name="dyn_isf_adjust_title" formatted="false">Коэффициент регулировки динамического диапазона чувствительности ISF %</string>
+    <string name="dyn_isf_adjust_title">Коэффициент регулировки динамического диапазона чувствительности ISF %</string>
     <string name="openaps_smb_dynamic_isf">Динамический ISF</string>
     <string name="openapsma_disabled">модуль не активен</string>
     <string name="openapsma_no_glucose_data">Данные гликемии недоступны</string>
@@ -12,6 +11,7 @@
     <string name="description_ama">Состояние алгоритма в 2017 году</string>
     <string name="description_smb">Самый новый алгоритм для опытных пользователей</string>
     <string name="description_smb_dynamic_isf">Последний алгоритм для опытных пользователей с динамическим/автоматическим ISF</string>
+    <string name="description_auto_isf">Экспериментальный алгоритм для продвинутых пользователей с расширениями AutoISF</string>
     <string name="openapsma_last_run_label">Предыдущее выполнение</string>
     <string name="openapsma_input_parameters_label">Параметры ввода</string>
     <string name="openapsma_glucose_status_label">Состояние гликемии</string>
@@ -30,13 +30,10 @@
     <string name="smb_disabled_in_preferences">Супер микро болюс SMB отключен в настройках</string>
     <string name="uam_disabled_in_preferences">Непредвиденный прием пищи UAM отключен в настройках</string>
     <string name="autosens_disabled_in_preferences">Автоматический подбор чувствительности Autosens отключен в настройках</string>
-    
     <string name="limiting_iob">Ограничение активного инсулина IOB до %1$.1f ед. из-за %2$s</string>
     <string name="maxvalueinpreferences">максимальное значение в настройках</string>
     <string name="hardlimit">жесткий предел</string>
-    
     <string name="insulin_peak">Пик</string>
-    
     <string name="smb_frequency_exceeded">Болюс был подан в течение последних трех минут, минуя супер микро болюс SMB</string>
     <string name="pump_not_initialized">Помпа не инициализирована!</string>
     <string name="loop_shortname">ЗЦ</string>
@@ -60,7 +57,6 @@
     <string name="loop_smb_set_by_pump_label">Супер микро болюс SMB задан помпой</string>
     <string name="fallback_smb_no_tdd">Возврат к SMB. Недостаточно данных TDD.</string>
     <string name="fallback_to_isf_no_tdd">Откат к чувствительности из профиля. Недостаточно данных. Причина: %1$s</string>
-    
     <string name="autotune_description">Помощь в возможной корректировке профиля (ISF, IC, базал)</string>
     <string name="autotune_shortname">АвтТюн</string>
     <string name="autotune_default_tune_days_title">Количество дней с данными</string>
@@ -77,6 +73,7 @@
     <string name="autotune_partial_result">Частичный результат дня %1$d / %2$d для расчета</string>
     <string name="autotune_result">Результат: %1$s</string>
     <string name="autotune_param">Парам</string>
+    <string name="autotune_percent">Процент Autotune: %s</string>
     <string name="autotune_missing">Отсутствует</string>
     <string name="autotune_run">Выполнить Autotune</string>
     <string name="autotune_check_input_profile_button">Проверьте профиль ввода</string>
@@ -89,12 +86,6 @@
     <string name="autotune_revert_local_profile_message">Восстановить профиль %1$s с помощью входного профиля?</string>
     <string name="autotune_profile_invalid">Неверный профиль</string>
     <string name="pump_disconnected">Помпа отключена</string>
-    
     <string name="autoISF_settings_title">Настройки AutoISF</string>
     <string name="smb_delivery_settings_title">Настройки введения микроболюсов SMB</string>
-
-
-
-
-    <string name="description_auto_isf">Экспериментальный алгоритм для продвинутых пользователей с расширениями AutoISF</string>
 </resources>
