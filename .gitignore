@@ -34,3 +34,6 @@ wear/pumpcontrol/*
 .claude/settings.local.json
 .claude/CLAUDE_COMMANDS.md
 tmpclaude-*
+translate_all.py
+translate_all1.py
+translate_all.py

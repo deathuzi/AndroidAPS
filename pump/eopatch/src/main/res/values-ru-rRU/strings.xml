@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="eopatch">EOPatch2</string>
-    <string name="eopatch_shortname">EOP2</string>
     <string name="eopatch_pump_description">Интеграция помпы для EOPatch2 / GlucoMen Day</string>
     <string name="low_reservoir">Оповещения о низком уровне инсулина в резервуаре</string>
     <string name="patch_expiration_reminders">Напоминание об истечении срока патча</string>
@@ -9,13 +7,12 @@
     <string name="eopatch_ble_status">Статус BLE</string>
     <string name="eopatch_serial_number">Серийный номер</string>
     <string name="eopatch_expiration_time">Окончание срока действия</string>
+    <string name="eopatch_not_activated">Не активирован</string>
     <string name="eopatch_base_basal_rate">Базовая скорость базала</string>
     <string name="eopatch_temp_basal_rate">Временная базальная скорость</string>
     <string name="invalid_basal_rate">Базальная скорость профиля меньше 0,05 ед/ч. EOPatch имеет минимальный шаг подачи 0.05 ед/ч. Повторите еще раз после приведения профиля в соответствие с этим параметром.</string>
     <string name="no_profile_selected">Профиль не выбран. Выберите профиль и повторите попытку.</string>
     <string name="symbol_day">день</string>
-    <string name="symbol_plus">+</string>
-    <string name="symbol_minus">-</string>
     <string name="time_30min">30 мин.</string>
     <string name="time_1hr">1 ч.</string>
     <string name="time_1hr_30min">1 час 30 мин</string>
@@ -37,17 +34,21 @@
     <string name="patch_wake_up">Заполнение Инсулина</string>
     <string name="patch_wake_up_desc_1">Заполните новый Patch инсулином при комнатной температуре. Проверьте наклон шприца.</string>
     <string name="patch_wake_up_desc_2">Дождитесь одиночного сигнала.</string>
+    <string name="patch_wake_up_pairing_info">Во время сопряжения появятся два системных всплывающих окна Android. Вы должны подтвердить оба, чтобы завершить сопряжение Bluetooth.</string>
     <string name="patch_start_pairing">Начните сопряжение</string>
     <string name="patch_connect_new">Идет сопряжение с Patch</string>
     <string name="patch_connect_new_desc">Идет сопряжение с новым Patch\'ем. \n Держите расстояние между патчем и смарт-устройством как можно ближе</string>
     <string name="patch_remove_needle_cap">Подготовьтесь к установке Patch\'а</string>
     <string name="patch_remove_needle_cap_desc_1">Удалите клеевую ленту и нажмите «Далее».</string>
+    <string name="patch_remove_needle_cap_desc_2">Если игла торчит, нажмите \'Отбраковать\'.</string>
+    <string name="patch_remove_needle_cap_desc_3">Если пластырь влажный, грязный или его липкая лента загнута, нажмите \'Отбраковать\'.</string>
     <string name="patch_remove_protection_tape">Установка Patch</string>
     <string name="patch_remove_protection_tape_desc_1">Очистите и просушите место применения, затем прикрепите Patch к коже.</string>
     <string name="patch_remove_protection_tape_desc_2">Проверьте место ввода катетера и нажмите «Начать проверку безопасности».</string>
     <string name="patch_start_safety_check">Запустите проверку безопасности</string>
     <string name="patch_safety_check">Проверка безопасности…</string>
     <string name="patch_safety_check_desc_1">Потребуется около 30 секунд.</string>
+    <string name="patch_safety_check_desc_2">Для безопасного использования не снимайте рычажок иглы до завершения проверки безопасности!</string>
     <string name="patch_rotate_knob">Введение иглы</string>
     <string name="patch_rotate_knob_desc_1">Поверните рычаг действия Иглы более чем на 100 градусов, чтобы вставить иглу, а затем поворачивайте рычаг дальше для ее снятия</string>
     <string name="patch_rotate_knob_desc_2">Дождитесь одиночного сигнала, затем нажмите \'Далее\'.</string>
@@ -59,11 +60,12 @@
     <string name="patch_activate_reminder_desc">Активация патча не была завершена.\n Продолжить.</string>
     <string name="patch_communication_check_helper_1">Поднесите смарт-устройство ближе к Patch\'у.</string>
     <string name="patch_communication_check_helper_2">Перейдите на другое место и повторите попытку.</string>
+    <string name="patch_safety_check_failed_desc">Проверка безопасности не пройдена. Пожалуйста, попробуйте снова.</string>
     <string name="patch_communication_failed">Ошибка связи</string>
     <string name="patch_communication_succeed">Коммуникация завершена успешно</string>
     <string name="patch_communication_succeed_message">Подключено к Patch.</string>
     <string name="patch_cancel_pairing">Отменить сопряжение</string>
-    <string name="all_dose_unit">&#160; ед</string>
+    <string name="all_dose_unit">  ед</string>
     <string name="insulin_suspend_msg1">После приостановки текущий болюс &amp; Временный базал будет отменен. \n\nСкорость базала: %1$s ед/ч\nОсталось времени: %2$s\n&amp; инсулина: %3$.2f U</string>
     <string name="insulin_suspend_msg2">После приостановки текущий болюс будет отменен. \n\n Осталось инсулина: %1$.2f U</string>
     <string name="insulin_suspend_msg3">После приостановки текущий Временный базал будет отменен.\n\n Скорость базала: %1$s ед/ч\n Осталось времени: %2$s</string>
@@ -77,12 +79,16 @@
     <string name="needle_insertion_error_3">Нажмите \'Завершить пользование Patch\'ем\', чтобы деактивировать Patch.</string>
     <string name="string_suspend_time_insulin_delivery_title">Время приостановки базала</string>
     <string name="string_resume_insulin_delivery_title">Возобновить подачу инсулина</string>
+    <string name="string_resume_insulin_delivery_message">Окончание приостановки инсулина.\nНажмите \'Подтвердить\', чтобы возобновить подачу инсулина.\n\nПодача инсулина не возобновится, пока вы не нажмете \'Подтвердить\'.\nЕсли вы не нажмете \'Подтвердить\', может развиться гипергликемия.</string>
     <string name="string_suspended_insulin_delivery_message">Введение инсулина приостановлено.</string>
     <string name="string_resumed_insulin_delivery_message">Подача инсулина возобновлена.</string>
     <string name="string_temp_basal_remained_hhmm">оставшееся время: %1$s:%2$s</string>
+    <string name="string_pause_failed">Приостановка не удалась.</string>
     <string name="string_resume_failed">Возобновление не состоялось.</string>
-    <!-- Permission rationales -->
-
-
-    <string name="key">перевод: Успешно</string>
+    <string name="wizard_exit_activation_warning">Выйти из мастера активации? Пластырь может остаться в неполном состоянии и потребуется новый пластырь.</string>
+    <string name="wizard_exit_deactivation_warning">Выйти из мастера деактивации? Пластырь может остаться активным и продолжить подачу инсулина.</string>
+    <string name="patch_force_reset">Принудительный сброс</string>
+    <string name="patch_force_reset_confirm">Это сбросит состояние пластыря локально без отправки команд пластырю. Используйте только в случае неудачи обычной деактивации. Пластырь продолжит подачу, пока не разрядится батарея или его не выключат вручную.</string>
+    <string name="permission_exact_alarm_title">Точные будильники</string>
+    <string name="permission_exact_alarm_description">Приложению требуется разрешение на планирование точных будильников для управления пластырем.</string>
 </resources>

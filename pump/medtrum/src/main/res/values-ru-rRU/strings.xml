@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <!-- MedtrumPump -->
+    
     <string name="medtrum">Медтрум</string>
-    <string name="medtrum_pump_shortname">MT</string>
     <string name="medtrum_pump_description">Интеграция с помпами Medtrum Nano и Medtrum 300U</string>
     <string name="medtrum_pump_setting">Настройки Medtrum</string>
     <string name="pump_error">Ошибка помпы: %1$s !! </string>
@@ -13,7 +12,7 @@
     <string name="patch_not_active">Патч не активирован</string>
     <string name="pump_setting_failed">Сбой передачи пользовательских настроек на помпу!</string>
     <string name="pump_sync_error">Ошибка при синхронизации журнала с помпы, запись пропущена. Проверьте вкладку терапии, правильно ли синхронизированы болюсы. Уберите предупреждение, а если ошибка повторится, замените патч или базу помпы.</string>
-    <!-- overview fragment -->
+    
     <string name="last_connection_label">Последнее подключение</string>
     <string name="active_bolus_label">Активный болюс</string>
     <string name="pump_state_label">Статус помпы</string>
@@ -28,7 +27,7 @@
     <string name="change_patch_label">Сменить патч</string>
     <string name="requested_by_user" comment="26 characters max for translation">Запрошено пользователем</string>
     <string name="expiry_not_enabled">Не включено</string>
-    <!-- Alarm strings -->
+    
     <string name="alarm_none">Отсутствует</string>
     <string name="alarm_pump_low_battery">Низкий заряд батареи помпы</string>
     <string name="alarm_pump_low_reservoir">В резервуаре помпы мало инсулина</string>
@@ -49,8 +48,8 @@
     <string name="alarm_no_calibration">Нет калибровки</string>
     <string name="pump_time_update_failed">Не удалось обновить часовой пояс помпы, закройте сообщение и обновите вручную.</string>
     <string name="bolus_error">Болюс - ошибка</string>
-    <!-- Status strings -->
-    <!-- wizard-->
+    
+    
     <string name="retry">Повторить</string>
     <string name="step_prepare_patch">Активировать патч</string>
     <string name="step_prepare_patch_connect">Подключиться и заполнить</string>
@@ -90,7 +89,7 @@
     <string name="activation_in_progress">Ой! Что-то пошло не так, вероятно, активация уже запущена.</string>
     <string name="press_retry_or_discard">Нажмите <b>Далее</b>, чтобы возобновить активацию или <b>Discard</b> для сброса статуса активации.</string>
     <string name="reading_activation_status">подождите, получение статуса активации с помпы.</string>
-    <!-- settings-->
+    
     <string name="alarm_setting_title">Настройки оповещений</string>
     <string name="alarm_setting_summary">Выберите предпочитаемые параметры оповещений помпы.</string>
     <string name="alarm_setting_light_vibrate_beep">Подсветка, вибрация и звук</string>
@@ -113,13 +112,13 @@
     <string name="daily_max_insulin_summary">Укажите максимальное количество инсулина, допустимое для ввода в течение суток. Если оно будет превышено - помпа будет приостановлена.</string>
     <string name="scan_on_connection_error_title">Ошибка соединения</string>
     <string name="scan_on_connection_error_summary">ВНИМАНИЕ: Включайте только в случае проблем с подключением. Если включено, драйвер выполняет повторный поиск для подключения к помпе. Убедитесь, что доступ к местоположению установлен на \"Всегда разрешать\" </string>
-    <!-- treatment state-->
+    
     <string name="getting_pump_status">Получение статуса помпы</string>
     <string name="syncing_records">Синхронизация записей, осталось %1$d</string>
     <string name="getting_bolus_status">Получение статуса болюса</string>
     <string name="getting_temp_basal_status">Получение статуса ВБС</string>
     <string name="setting_pump_settings">Настройка параметров пользователя</string>
-    <!-- bolus-->
+    
     <string name="bolus_error_reason_user">Болюс был отменен пользователем</string>
     <string name="bolus_error_reason_not_connected">Помпа не подключена</string>
     <string name="bolus_error_reason_already_in_progress">Болюс уже выполняется</string>
@@ -127,17 +126,4 @@
     <string name="bolus_error_reason_communication_lost">Истекло время ожидания статуса болюса</string>
     <string name="bolus_error_reason_pump_error">Ошибка помпы</string>
 
-    <string name="patch_reset_after_primed_error">Patch reset detected after priming! Remove the patch and start a new patch.</string>
-    <string name="status_idle">Idle</string>
-    <string name="status_filled">Filled</string>
-    <string name="status_priming">Priming</string>
-    <string name="status_primed">Primed</string>
-    <string name="status_ejecting">Ejecting</string>
-    <string name="status_ejected">Ejected</string>
-    <string name="status_active">Active</string>
-    <string name="status_stopped">Stopped</string>
-    <string name="step_select_insulin">Select Insulin</string>
-    <string name="unpair_confirm_message">This will clear the stored pump serial number and disconnect. Activate a new patch to scan for a pump.</string>
-    <string name="ble_scan_connect_pump_base_first">Connect the pump base to a fresh patch to power it on, then select it from the list below.</string>
-    <string name="connect_pump_base">Make sure the pump base is connected to the patch, remove the residual air and fill with insulin, then press</string>
-</resources>
+    </resources>

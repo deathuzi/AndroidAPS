@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
     <string name="label_watchface_circle">AAPS (круглый)</string>
     <string name="label_watchface_digital_style">AAPS (ЦифровойСтиль)</string>
@@ -32,10 +32,10 @@
     <string name="pref_show_temp_basal">Отображать ВБС</string>
     <string name="pref_show_bolus">Отображать болюс &amp; СМБ</string>
     <string name="pref_show_grid">Отображать сетку</string>
-    <string name="pref_dark" comment="Enables dark visual theme">Тёмная</string>
+    <string name="pref_dark">Тёмная</string>
     <string name="pref_highlight_basals">Выделить базалы</string>
     <string name="pref_prediction_lines">Отображать прогнозы</string>
-    <string name="pref_matching_divider" comment="To make divider match its background with background of whole watchface">Соответствующий делитель</string>
+    <string name="pref_matching_divider">Соответствующий делитель</string>
     <string name="pref_chart_timeframe">Временной диапазон графика</string>
     <string name="pref_1_hour">1 час</string>
     <string name="pref_2_hours">2 часа</string>
@@ -94,7 +94,7 @@
     <string name="action_preset_1">Предустановка 1</string>
     <string name="action_preset_2">Предустановка 2</string>
     <string name="action_preset_3">Предустановка 3</string>
-    <string name="action_free_amount" comment="In prime/fill menu, allows one to enter any amount to be used for priming/filling">Произвольное количество</string>
+    <string name="action_free_amount">Произвольное количество</string>
     <string name="action_confirm">ПОДТВЕРДИТЬ</string>
     <string name="action_timeshift_hours">Временной сдвиг\n[час]</string>
     <string name="bolus_progress">Вводится болюс</string>
@@ -105,7 +105,6 @@
     <string name="status_profile_switch">Смена профиля</string>
     <string name="status_tdd">TDD/общая суточная доза</string>
     <string name="activity_carb">Углеводы</string>
-    <string name="activity_IOB">IOB</string>
     <string name="activity_no_status">статус отсутствует</string>
     <string name="color_name_red">красный</string>
     <string name="color_name_pink">розовый</string>
@@ -164,14 +163,12 @@
     <string name="no_cob_g">--г</string>
     <string name="no_tmp_basal_u_h">-.--ед/ч</string>
     <string name="cob_000g">000г</string>
-    <string name="svg_00_0" comment="use , or . only">00,0</string>
     <string name="iob_0_00u">0,00 ед</string>
     <string name="snooze_alert">Отложить оповещения AAPS</string>
     <string name="sending_snooze">Отправка команды отложить оповещения AAPS</string>
     <string name="week_short">н</string>
     <string name="day_short">д</string>
     <string name="hour_short">ч</string>
-    <string name="hour_minute">%1$s:%2$s</string>
     <string name="hour_minute_second">%1$s%2$s%3$s</string>
     <string name="pref_heartRateSampling">Частота сердечных сокращений</string>
     <string name="pref_heartRateSmoothing">Сглаживание частоты сердечных сокращений</string>
@@ -196,18 +193,29 @@
     <string name="complication_br_cob_iob">База, актУг &amp; актИнс</string>
     <string name="complication_br_cob_iob_ext1">СкБаз, АктгУ&amp; АктИнсУсл1</string>
     <string name="complication_br_cob_iob_ext2">СкБаз, АктгУ&amp; АктИнсУсл2</string>
-    <string name="complication_br_iob">BR &amp; IoB</string>
     <string name="complication_br">Базальная скорость</string>
+    <string name="complication_br_tt">BR и цель</string>
+    <string name="complication_target">Цель</string>
     <string name="complication_cob_iob">АктУг &amp; актИнс</string>
     <string name="complication_cob_icon">Иконка актУг</string>
     <string name="complication_cob_detailed">АктУг подробно</string>
     <string name="complication_iob_icon">Иконка актИнс</string>
     <string name="complication_iob_detailed">АктИнс подробно</string>
     <string name="complication_uploader_phone_battery">Батарея загрузчика/телефона</string>
+    <string name="status_running_mode">Режим работы</string>
+    <string name="label_running_mode_title">Режим работы</string>
+    <string name="label_bg_graph_tile">BG график</string>
+    <string name="tile_tap_action">Действие при нажатии</string>
+    <string name="tile_graph_time_range">Диапазон времени</string>
+    <string name="tile_tap_bg_graph">BG график</string>
+    <string name="tile_tap_main_menu">Главное меню</string>
+    <string name="tile_tap_loop_status">Статус цикла</string>
+    <string name="action_running_mode_selected">Запрошен режим работы</string>
+    <string name="title_activity_disconnect_pump">Отключение помпы</string>
+    <string name="title_activity_suspend_loop">Пауза цикла</string>
     <string name="wizard_total_insulin">Суммарное количество инсулина</string>
     <string name="wizard_calculation">Расчет</string>
     <string name="wizard_carbs_format">%1$d г углеводов</string>
-    <string name="wizard_settings_format">IC: %1$s | ISF: %2$s</string>
     <string name="wizard_result_bg">ГК</string>
     <string name="wizard_result_bg_tt">ГК (ВЦ: %1$s)</string>
     <string name="wizard_result_trend">тренд 15\'</string>
@@ -235,6 +243,8 @@
     <string name="loop_status_lgs">Приостановка помпы на низкой ГК</string>
     <string name="loop_status_disabled">Цикличность неактивирована</string>
     <string name="loop_status_suspended">ЗЦикл остановлен</string>
+    <string name="loop_status_pump_suspended">Помпа приостановлена</string>
+    <string name="loop_status_dst_suspended">Приостановлено DST</string>
     <string name="loop_status_disconnected">Связь с помпой отключена</string>
     <string name="loop_status_superbolus">Суперболюс</string>
     <string name="loop_status_unknown">Неизвестно</string>
@@ -250,7 +260,10 @@
     <string name="loop_status_temp_target">Врем. цель</string>
     <string name="loop_status_target_range">Диапазон</string>
     <string name="loop_status_target">Целевое значение ГК:</string>
+    <string name="loop_status_adjusted_target">Скорректированная цель</string>
     <string name="loop_status">Статус цикла</string>
-
-    <string name="key">перевод</string>
+    <string name="loop_status_refresh">Обновить</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="request">Запросить</string>
+    <string name="constraint_applied">Ограничение применено!</string>
 </resources>

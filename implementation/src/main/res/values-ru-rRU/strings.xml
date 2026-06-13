@@ -1,47 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
     <string name="executing_right_now">Команда выполняется</string>
     <string name="basal_value_below_minimum">значение базала ниже минимума. профиль не создан!</string>
-    <!--       Stats -->
-    <string name="carbs_short" comment="max 6 characters">Угли</string>
-    <!--    PumpStatusGenerator-->
+    <string name="carbs_short">Угли</string>
     <string name="short_status_last_connection">Пред соед: %1$d мин. наз</string>
     <string name="short_status_last_bolus">ПредБолюс: %1$s ед. @ %2$s</string>
     <string name="short_status_temp_basal">ВремБаз %1$s</string>
     <string name="short_status_battery">Бат: %1$d%%</string>
     <string name="short_status_not_initialized">Помпа не иниц</string>
-    <!--    Permissions-->
-    <!--       ConcentrationHelper / DecimalFormatter-->
-    <!-- Maintenance strings (moved from plugins/configuration) -->
-
-
-
-
-
-    <string name="permission_battery_title">Battery Optimization</string>
-    <string name="permission_battery_description">Application needs to be excluded from battery optimization to run reliably in the background</string>
-    <string name="permission_directory_title">AAPS Directory</string>
-    <string name="permission_directory_description">Select a directory for application settings and log files</string>
-    <string name="permission_notifications_title">Notifications</string>
-    <string name="permission_notifications_description">Required to show alerts, alarms, and pump status updates</string>
-    <string name="bolus_with_volume">%1$s\u00a0U (%2$.1f\u00a0µl)</string>
-    <string name="insulin_concentration">U%1$d</string>
-    <string name="concentration_format">%1$s (%2$s)</string>
-    <string name="concentration_tbr_format">%1$s @%2$s %3$d/%4$d\'</string>
-    <string name="concentration_ago_format">%1$s @%2$s (%3$d\')</string>
-    <string name="concentration_etbr_format">E %1$s @%2$s %3$d/%4$d\'</string>
-    <string name="concentration_delivered_format">%1$s/%2$s</string>
-    <string name="pump_base_basal_rate_cu_dynamic">%1$s\u00a0CU/h</string>
-    <string name="exported_to_cloud">Settings successfully exported to cloud storage</string>
-    <string name="export_to_cloud_failed">Failed to export to cloud storage</string>
-    <string name="csv_uploaded_to_cloud">User Entries CSV successfully uploaded to cloud storage</string>
-    <string name="exported">Preferences exported</string>
-    <string name="exported_failed">Preferences export failed!</string>
-    <string name="filenotfound">File not found</string>
-    <string name="ue_exported">User Entries exported</string>
-    <string name="exported_ago">exported %1$s ago</string>
-    <string name="exported_at">exported at %1$s</string>
-    <string name="exported_less_than_hour_ago">exported less than hour ago</string>
-    <string name="metadata_warning_different_flavour">Preferences were created with different variant of AAPS (%1$s) while you have: %2$s.\n\nSome settings may be missing or invalid - after importing please check and update your preferences.</string>
-    <string name="key">перевод</string>
+    <string name="error_accessing_filesystem_select_aaps_directory_properly">Ошибка доступа к файловой системе. Выберите каталог AAPS корректно.</string>
+    <string name="backup_to_google_drive">Резервное копирование на Google Drive</string>
+    <string name="csv_upload_failed">Не удалось загрузить CSV записей пользователя в облачное хранилище</string>
+    <string name="csv_upload_error">Произошла ошибка при загрузке CSV в облако</string>
+    <string name="uploading_to_cloud">Загрузка в облако...</string>
+    <string name="cloud_directory_path">Каталог облака: %1$s</string>
+    <string name="google_drive_token_refresh_failed">Не удалось обновить токен доступа Google Drive</string>
+    <string name="google_drive_token_refresh_error">Не удалось обновить токен доступа Google Drive: %1$s</string>
+    <string name="google_drive_connection_test_failed">Тест подключения к Google Drive не пройден</string>
+    <string name="google_drive_connect_error">Не удалось подключиться к Google Drive: %1$s</string>
+    <string name="google_drive_list_folders_failed">Не удалось получить список папок Google Drive</string>
+    <string name="google_drive_list_folders_error">Ошибка при получении списка папок: %1$s</string>
+    <string name="google_drive_upload_no_id">Загрузка выполнена успешно, но не возвращен идентификатор</string>
+    <string name="google_drive_upload_verify_failed">Не удалось проверить загрузку</string>
+    <string name="google_drive_upload_failed">Загрузка не удалась: %1$s</string>
+    <string name="google_drive_upload_error">Ошибка при загрузке файла: %1$s</string>
+    <string name="google_drive_folder_access_error">Не удалось создать или получить доступ к целевой папке: %1$s</string>
+    <string name="google_drive_list_settings_failed">Не удалось получить список файлов настроек</string>
+    <string name="google_drive_list_settings_error">Ошибка при получении списка файлов настроек: %1$s</string>
+    <string name="google_drive_download_failed">Не удалось скачать файл</string>
+    <string name="google_drive_download_error">Ошибка при скачивании файла: %1$s</string>
+    <string name="google_drive_authorized">Google Drive авторизован</string>
+    <string name="google_drive_reauth_required">Очистите настройки и повторно авторизуйте Google Drive</string>
 </resources>
