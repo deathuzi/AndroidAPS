@@ -1,27 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="executing_right_now">Команда выполняется</string>
-    <string name="basal_value_below_minimum">значение базала ниже минимума. профиль не создан!</string>
+    <string name="executing_right_now">Команда выполняется прямо сейчас</string>
+    <!-- FIX: строчная буква → заглавная; "не создан" → "не задан" (точный перевод "not set") -->
+    <string name="basal_value_below_minimum">Значение базала ниже минимума. Профиль не задан!</string>
+
+    <!--       Stats -->
     <string name="carbs_short">Угли</string>
-    <string name="short_status_last_connection">Пред соед: %1$d мин. наз</string>
-    <string name="short_status_last_bolus">ПредБолюс: %1$s ед. @ %2$s</string>
-    <string name="short_status_temp_basal">ВремБаз %1$s</string>
+
+    <!--    PumpStatusGenerator-->
+    <string name="short_status_last_connection">Пред соединение: %1$d мин. наз</string>
+    <string name="short_status_last_bolus">Пред Болюс: %1$s ед. @ %2$s</string>
+    <!-- FIX: добавлено двоеточие по аналогии с EN "Temp: %1$s" -->
+    <string name="short_status_temp_basal">Врем Базал: %1$s</string>
     <string name="short_status_battery">Бат: %1$d%%</string>
-    <string name="short_status_not_initialized">Помпа не иниц</string>
+    <string name="short_status_not_initialized">Помпа не инициализирована</string>
+
+    <!--    Permissions (NEW — отсутствовали в предыдущей локализации) -->
+    <string name="permission_battery_title">Оптимизация батареи</string>
+    <string name="permission_battery_description">Приложение должно быть исключено из оптимизации батареи для надёжной работы в фоновом режиме</string>
+    <string name="permission_directory_title">Директория AAPS</string>
+    <string name="permission_directory_description">Выберите директорию для настроек приложения и файлов журнала</string>
+    <string name="permission_notifications_title">Уведомления</string>
+    <string name="permission_notifications_description">Необходимо для отображения предупреждений, сигналов тревоги и обновлений статуса помпы</string>
+
+    <!--       ConcentrationHelper / DecimalFormatter (NEW — отсутствовали в предыдущей локализации) -->
+    <string name="bolus_with_volume">%1$s\u00a0ед. (%2$.1f\u00a0мкл)</string>
+    <string name="insulin_concentration">U%1$d</string>
+    <string name="concentration_format">%1$s (%2$s)</string>
+    <string name="concentration_tbr_format">%1$s @%2$s %3$d/%4$d\'</string>
+    <string name="concentration_ago_format">%1$s @%2$s (%3$d\')</string>
+    <string name="concentration_etbr_format">E %1$s @%2$s %3$d/%4$d\'</string>
+    <string name="concentration_delivered_format">%1$s/%2$s</string>
+    <string name="pump_base_basal_rate_cu_dynamic">%1$s\u00a0CU/ч</string>
+
+    <!-- Maintenance strings -->
+    <!-- NEW — отсутствовали в предыдущей локализации -->
+    <string name="exported_to_cloud">Настройки успешно экспортированы в облачное хранилище</string>
+    <string name="export_to_cloud_failed">Не удалось экспортировать в облачное хранилище</string>
+    <string name="csv_uploaded_to_cloud">CSV записей пользователя успешно загружен в облачное хранилище</string>
+    <string name="exported">Настройки экспортированы</string>
+    <string name="exported_failed">Ошибка экспорта настроек!</string>
+    <string name="filenotfound">Файл не найден</string>
+    <string name="ue_exported">Записи пользователя экспортированы</string>
+    <string name="exported_ago">экспортировано %1$s назад</string>
+    <string name="exported_at">экспортировано в %1$s</string>
+    <string name="exported_less_than_hour_ago">экспортировано менее часа назад</string>
+    <!-- NEW -->
+    <string name="metadata_warning_different_flavour">Настройки созданы с другим вариантом AAPS (%1$s), тогда как у вас: %2$s.\n\nНекоторые настройки могут отсутствовать или быть недействительными — после импорта проверьте и обновите настройки.</string>
     <string name="metadata_warning_different_device">Настройки были созданы на другом устройстве. Это нормально, если вы импортируете с более старого или другого телефона, но убедитесь, что импортированные настройки корректны!</string>
     <string name="metadata_warning_old_export">Импортированным настройкам уже %1$s дней! Возможно, у вас есть более свежие настройки или вы выбрали неверный файл? Не забывайте регулярно экспортировать настройки!</string>
     <string name="metadata_warning_date_format">Неверный формат даты и времени!</string>
-    <string name="metadata_warning_different_version">Настройки с другой минорной версии приложения. Это нормально, если вы импортируете после обновления, но после импорта проверьте, корректны ли настройки.</string>
-    <string name="metadata_urgent_different_version">Настройки с другой мажорной версии приложения. Мажорные версии существенно различаются и могут иметь несовместимые настройки! После импорта обязательно проверьте, корректны ли настройки.</string>
-    <string name="prefdecrypt_settings_tampered">Файл настроек изменен</string>
-    <string name="prefdecrypt_settings_secure">Файл настроек защищен</string>
+    <!-- FIX: точка в конце заменена на "!" как в оригинале -->
+    <string name="metadata_warning_different_version">Настройки с другой минорной версии приложения. Это нормально, если вы импортируете после обновления, но после импорта проверьте, корректны ли настройки!</string>
+    <!-- FIX: точка в конце заменена на "!" как в оригинале (urgent-предупреждение) -->
+    <string name="metadata_urgent_different_version">Настройки с другой мажорной версии приложения. Мажорные версии существенно различаются и могут иметь несовместимые настройки! После импорта обязательно проверьте, корректны ли настройки!</string>
+    <!-- FIX: "изменен" → "подделан" — передаёт смысл несанкционированного вмешательства ("tampered") -->
+    <string name="prefdecrypt_settings_tampered">Файл настроек подделан</string>
+    <string name="prefdecrypt_settings_secure">Файл настроек защищён</string>
     <string name="prefdecrypt_settings_unencrypted">Используется небезопасный, незашифрованный формат настроек</string>
     <string name="prefdecrypt_wrong_json">Ошибка формата JSON, отсутствует обязательное поле (format, content, metadata или security)</string>
     <string name="prefdecrypt_wrong_password">Ошибка расшифровки, указанный пароль не может расшифровать файл</string>
     <string name="prefdecrypt_issue_missing_file_hash">Отсутствует контрольная сумма (hash) файла, невозможно проверить подлинность настроек!</string>
-    <string name="prefdecrypt_issue_modified">Файл был изменен после экспорта!</string>
+    <string name="prefdecrypt_issue_modified">Файл был изменён после экспорта!</string>
     <string name="prefdecrypt_issue_parsing">Ошибка расшифровки, не удалось разобрать настройки!</string>
-    <string name="prefdecrypt_issue_wrong_pass">Ошибка расшифровки, предоставленный пароль неверен или файл настроек был изменен! Возможно, импортируемый файл был экспортирован с другим мастер-паролем.</string>
+    <string name="prefdecrypt_issue_wrong_pass">Ошибка расшифровки, предоставленный пароль неверен или файл настроек был изменён! Возможно, импортируемый файл был экспортирован с другим мастер-паролем.</string>
     <string name="prefdecrypt_issue_wrong_format">Отсутствует конфигурация шифрования, формат настроек неверен!</string>
     <string name="prefdecrypt_issue_wrong_algorithm">Неподдерживаемый или не указанный алгоритм шифрования!</string>
     <string name="metadata_label_format">Формат файла</string>
@@ -46,7 +88,7 @@
     <string name="google_drive_connect_error">Не удалось подключиться к Google Drive: %1$s</string>
     <string name="google_drive_list_folders_failed">Не удалось получить список папок Google Drive</string>
     <string name="google_drive_list_folders_error">Ошибка при получении списка папок: %1$s</string>
-    <string name="google_drive_upload_no_id">Загрузка выполнена успешно, но не возвращен идентификатор</string>
+    <string name="google_drive_upload_no_id">Загрузка выполнена успешно, но не возвращён идентификатор</string>
     <string name="google_drive_upload_verify_failed">Не удалось проверить загрузку</string>
     <string name="google_drive_upload_failed">Загрузка не удалась: %1$s</string>
     <string name="google_drive_upload_error">Ошибка при загрузке файла: %1$s</string>
@@ -57,4 +99,5 @@
     <string name="google_drive_download_error">Ошибка при скачивании файла: %1$s</string>
     <string name="google_drive_authorized">Google Drive авторизован</string>
     <string name="google_drive_reauth_required">Очистите настройки и повторно авторизуйте Google Drive</string>
+
 </resources>

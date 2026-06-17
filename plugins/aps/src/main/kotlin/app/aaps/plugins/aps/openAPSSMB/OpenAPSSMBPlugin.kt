@@ -602,6 +602,8 @@ open class OpenAPSSMBPlugin @Inject constructor(
             BooleanKey.ApsSensitivityRaisesTarget,
             BooleanKey.ApsResistanceLowersTarget,
             BooleanKey.ApsUseSmb,
+            BooleanKey.ApsDisableCgmWhitelistForSmb,
+            BooleanKey.ApsAllowRecalculatedBg,
             BooleanKey.ApsUseSmbWithHighTt,
             BooleanKey.ApsUseSmbAlways,
             BooleanKey.ApsUseSmbWithCob,

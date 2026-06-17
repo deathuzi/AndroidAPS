@@ -135,9 +135,29 @@ class SafetyPluginTest : TestBaseWithProfile() {
     @Test
     fun bgSourceShouldPreventSMBAlways() = runTest {
         whenever(persistenceLayer.isAdvancedFilteringSupported()).thenReturn(false)
+        whenever(preferences.get(BooleanKey.ApsDisableCgmWhitelistForSmb)).thenReturn(false)
+        whenever(preferences.get(BooleanKey.ApsAllowRecalculatedBg)).thenReturn(false)
         val c = safetyPlugin.isAdvancedFilteringEnabled(ConstraintObject(true, aapsLogger))
         assertThat(c.getReasons()).isEqualTo("Safety: SMB always and after carbs disabled because active BG source doesn\\'t support advanced filtering")
         assertThat(c.value()).isFalse()
+    }
+
+    @Test
+    fun smbAlwaysAllowedWhenWhitelistDisabled() = runTest {
+        whenever(persistenceLayer.isAdvancedFilteringSupported()).thenReturn(false)
+        whenever(preferences.get(BooleanKey.ApsDisableCgmWhitelistForSmb)).thenReturn(true)
+        whenever(preferences.get(BooleanKey.ApsAllowRecalculatedBg)).thenReturn(false)
+        val c = safetyPlugin.isAdvancedFilteringEnabled(ConstraintObject(true, aapsLogger))
+        assertThat(c.value()).isTrue()
+    }
+
+    @Test
+    fun smbAlwaysAllowedWhenRecalculatedBgAllowed() = runTest {
+        whenever(persistenceLayer.isAdvancedFilteringSupported()).thenReturn(false)
+        whenever(preferences.get(BooleanKey.ApsDisableCgmWhitelistForSmb)).thenReturn(false)
+        whenever(preferences.get(BooleanKey.ApsAllowRecalculatedBg)).thenReturn(true)
+        val c = safetyPlugin.isAdvancedFilteringEnabled(ConstraintObject(true, aapsLogger))
+        assertThat(c.value()).isTrue()
     }
 
     @Test

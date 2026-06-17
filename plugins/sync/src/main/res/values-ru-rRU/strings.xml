@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- AAPSClient -->
     <string name="connection_settings_title">Параметры подключения</string>
     <string name="description_ns_client">Синхронизирует данные с Nightscout при помощи API v1</string>
     <string name="description_ns_client_v3">Синхронизирует данные с Nightscout при помощи API v3</string>
@@ -7,64 +8,108 @@
     <string name="blocked_by_connectivity">Заблокировано настройками подключения</string>
     <string name="no_connectivity">Нет подключения</string>
     <string name="unsupported_ns_version">Неподдерживаемая версия Nightscout</string>
-    <string name="ns_malfunction">Некорректная работа NSClient. Возможно следует перезапустить NS и NSClient.</string>
-    <string name="no_write_permission">NS не имеет разрешения внести изменения. неверный API secret?</string>
-    <string name="ns_client">клиент NS</string>
+    <string name="ns_malfunction">Некорректная работа NSClient. Возможно, следует перезапустить NS и NSClient.</string>
+    <!-- FIX: прописная + "NSCLIENT" как в EN -->
+    <string name="no_write_permission">NSCLIENT не имеет разрешения на запись. Неверный API secret?</string>
+    <!-- ADDED: отсутствовало в RU -->
+    <string name="ns_client_v3_short_name">NSv3</string>
+    <!-- FIX: "клиент NS" (строчная) → техническое название -->
+    <string name="ns_client">NSClient</string>
+    <!-- ADDED -->
+    <string name="ns_client_short_name">NSv1</string>
     <string name="ns_client_url">Адрес URL:</string>
-    <string name="deliver_now">Подать сейчас</string>
-    <string name="queue">очередь</string>
-    <string name="status">состояние:</string>
-    <string name="clear_log">очистка лога</string>
+    <!-- ADDED -->
+    <string name="ns_client_title">NSClientV1</string>
+    <!-- ADDED -->
+    <string name="ns_client_v3_title">NSClientV3</string>
+    <!-- FIX: "Подать" → "Доставить" (deliver = доставить в контексте NS) -->
+    <string name="deliver_now">Доставить сейчас</string>
+    <!-- FIX: строчные метки → прописные -->
+    <string name="queue">Очередь:</string>
+    <string name="status">Состояние:</string>
+    <string name="clear_log">Очистить лог</string>
     <string name="full_sync">Полная синхронизация</string>
     <string name="full_sync_comment">Полная синхронизация? Это может занять много часов и до завершения вы не увидите новые данные в NS.</string>
     <string name="ns_sync_options">Синхронизация</string>
-    <string name="ns_alarm_options">опции оповещения</string>
+    <!-- FIX: "опции оповещения" (строчная) → нормализовано -->
+    <string name="ns_alarm_options">Настройки тревог</string>
+
+    <!-- Tidepool -->
     <string name="summary_tidepool_dev_servers">Если включено, выгрузка будет направлена на тестовые серверы вместо обычных</string>
     <string name="title_tidepool_dev_servers">Использовать серверы интеграции (тест)</string>
+    <!-- ADDED -->
+    <string name="tidepool">Tidepool</string>
+    <!-- ADDED -->
+    <string name="tidepool_shortname">TDP</string>
     <string name="description_tidepool">Загружает данные в Tidepool</string>
-    <string name="upload_now">Выгрузить (передать данные) сейчас</string>
+    <!-- FIX: "Выгрузить (передать данные) сейчас" — избыточно → компактно -->
+    <string name="upload_now">Загрузить сейчас</string>
     <string name="not_connected">Нет подключения</string>
     <string name="read_only">Только чтение</string>
     <string name="working">Обработка</string>
-    <string name="xdrip">xDrip +</string>
-    <string name="description_xdrip">Отправить данные ГК на xDrip+</string>
+
+    <!-- Xdrip StatusLine -->
+    <!-- FIX: "xDrip +" (лишний пробел) → "xDrip+" -->
+    <string name="xdrip">xDrip+</string>
+    <!-- ADDED -->
+    <string name="xdrip_shortname">XD</string>
+    <string name="description_xdrip">Отправляет данные на xDrip+</string>
     <string name="xdrip_status_settings">Строка состояния xDrip+ подробно</string>
-    <string name="disabled_loop">Цикл не активирован</string>
+    <!-- FIX: "не активирован" ≠ "Disabled" → "отключён" -->
+    <string name="disabled_loop">Цикл отключён</string>
     <string name="xdrip_not_installed">xDrip+ не установлен</string>
     <string name="calibration_sent">Калибровка отправлена на xDrip+</string>
-    <string name="xdrip_local_broadcasts_summary">Отправлять данные о глюкозе и терапии на xDrip+. Источником данных должен быть выбран \"xDrip+ Sync Follower\" а в настройках между приложениями надо включить - Принимать глюкозу/терапию</string>
+    <string name="xdrip_local_broadcasts_summary">Отправлять данные о глюкозе и терапии на xDrip+. Источником данных должен быть выбран «xDrip+ Sync Follower» и в настройках между приложениями включён приём — Принимать глюкозу/терапию</string>
     <string name="xdrip_local_broadcasts_title">Включить трансляции для xDrip+.</string>
+
+    <!-- DataBroadcast -->
     <string name="tizen">Внешние приложения-компаньоны</string>
+    <!-- ADDED -->
+    <string name="tizen_short">CAB</string>
     <string name="tizen_description">Включает передачу данных в различные внешние приложения-компаньоны</string>
+
+    <!-- GarminPlugin -->
+    <!-- ADDED -->
+    <string name="garmin">Garmin</string>
     <string name="garmin_description">Подключение к устройству Garmin (Fenix, Edge, …)</string>
-    <string name="garmin_local_http_server_port">Порт локального HTTP сервера</string>
-    <string name="garmin_local_http_server">Локальный HTTP сервер</string>
+    <string name="garmin_local_http_server_port">Порт локального HTTP-сервера</string>
+    <string name="garmin_local_http_server">Локальный HTTP-сервер</string>
+
+    <!-- Wear -->
+    <!-- ADDED -->
+    <string name="wear_shortname">WEAR</string>
     <string name="description_wear">Мониторить и контролировать AAPS при помощи часов WearOS.</string>
     <string name="no_watch_connected">(Часы не подключены)</string>
     <string name="pump_status">Статус помпы</string>
     <string name="loop_status">Статус цикла</string>
     <string name="quick_wizard_not_available">Выбранный мастер быстрого доступа больше недоступен, обновите плитку</string>
-    <string name="quick_wizard_message">Мастер: %1$s\nИнсулин: %2$.2fЕд\nУгл: %3$dg</string>
+    <!-- FIX: "%3$dg" → "%3$dг" (единица на русском) -->
+    <string name="quick_wizard_message">Мастер: %1$s\nИнсулин: %2$.2f ед\nУгл: %3$dг</string>
     <string name="user_action_not_available">Выбранное пользовательское действие %1$s более недоступно, обновите плитку</string>
     <string name="scene_not_available">Сцена %1$s больше не доступна, обновите плитку</string>
-    <string name="wear_remote_insulin_not_allowed_in_client">Команды удаленного введения инсулина отключены в клиентском режиме</string>
-    <string name="wear_action_tempt_cancel_message">Отменить действие ВЦ?</string>
+    <string name="wear_remote_insulin_not_allowed_in_client">Команды удалённого введения инсулина отключены в клиентском режиме</string>
+    <string name="wear_action_tempt_cancel_message">Отменить Временную Цель?</string>
     <string name="wear_action_tempt_unit_error">На часах и телефоне различные единицы измерения!</string>
-    <string name="wear_action_tempt_zero_message">Нулевая ВЦ - отменить выполнение Временной Цели?</string>
+    <string name="wear_action_tempt_zero_message">Нулевая ВЦ — отменить текущую Временную Цель?</string>
     <string name="wear_action_tempt_min_bg_error">Мин ГК вне диапазона!</string>
     <string name="wear_action_tempt_max_bg_error">Макс ГК вне диапазона!</string>
     <string name="wear_action_tempt_range_error">Недопустимый диапазон: значение Низкой цели (%1$s) не может быть больше Высокой цели (%2$s)</string>
-    <string name="wear_action_tempt_manual_range_message">ВЦ\n\nМин:%1$s\nМакс:%2$sПродолжительность:%3$d мин</string>
-    <string name="wear_action_tempt_manual_message">ВЦ \n\n Цель: %1$s Продолжительность: %2$d мин</string>
-    <string name="wear_action_tempt_preset_message">ВЦ \n\n Причина: %1$s\n Цель: %2$s\n Продолжительность: %3$d мин</string>
-    <string name="wear_wizard_settings_summary">Расчеты включены в результат калькулятора: </string>
+    <!-- FIX: добавлен \n перед "Продолжительность", пробелы после значений -->
+    <string name="wear_action_tempt_manual_range_message">ВЦ\n\nМин: %1$s\nМакс: %2$s\nПродолжительность: %3$d мин</string>
+    <!-- FIX: убраны лишние пробелы, добавлен \n -->
+    <string name="wear_action_tempt_manual_message">ВЦ\n\nЦель: %1$s\nПродолжительность: %2$d мин</string>
+    <string name="wear_action_tempt_preset_message">ВЦ\n\nПричина: %1$s\nЦель: %2$s\nПродолжительность: %3$d мин</string>
+    <string name="wear_wizard_settings_summary">Расчеты включены в результат калькулятора:</string>
     <string name="wear_general_settings">Общие настройки</string>
     <string name="wear_custom_watchface_settings">Настройка циферблатов</string>
-    <string name="wear_custom_watchface">Пользовательский циферблат %1$s</string>
+    <!-- FIX: добавлено двоеточие (EN: "Custom Watchface: %1$s") -->
+    <string name="wear_custom_watchface">Пользовательский циферблат: %1$s</string>
     <string name="wear_load_watchface">Загрузить циферблат</string>
     <string name="wear_infos_watchface">Циферблат Infos</string>
     <string name="wear_export_watchface">Экспортировать шаблон</string>
     <string name="wear_new_custom_watchface_exported">Пользовательский шаблон циферблата экспортирован</string>
+    <!-- ADDED: URL без перевода -->
+    <string name="wear_link_to_more_cwf_doc">https://androidaps.readthedocs.io/en/latest/ExchangeSiteCustomWatchfaces/index.html</string>
     <string name="resend_all_data">Повторить отправку всех данных</string>
     <string name="open_settings_on_wear">Открыть настройки на часах</string>
     <string name="wear_import_custom_watchface_title">Выберите пользовательский циферблат</string>
@@ -73,66 +118,120 @@
     <string name="cwf_infos_view_title">Список полей, входящих в циферблат</string>
     <string name="enabled">Включено</string>
     <string name="disabled">Отключено</string>
-    <string name="pump_fetching_data">пытаюсь получить данные с помпы.</string>
+    <!-- FIX: "пытаюсь получить данные" (1-е лицо ед.ч.!) → нейтральная форма -->
+    <string name="pump_fetching_data">Получение данных с помпы.</string>
     <string name="pump_old_data">TDD: До сих пор старые данные! Невозможно загрузить с помпы.</string>
     <string name="units_short">ед</string>
     <string name="grams_short">г</string>
     <string name="hour_short">ч</string>
     <string name="no_active_profile">Активный профиль не установлен!</string>
-    <string name="profile_message">Профиль: %1$s\nСдвиг по времени: %2$d h\n Процент: %3$d%%\n Продолжительность: %4$d мин</string>
+    <!-- FIX: "h" → "ч", убраны лишние пробелы после \n -->
+    <string name="profile_message">Профиль: %1$s\nСдвиг по времени: %2$d ч\nПроцент: %3$d%%\nПродолжительность: %4$d мин</string>
     <string name="target_only_aps_mode">Цели применяются только в режиме APS!</string>
     <string name="no_history">Нет данных истории!</string>
     <string name="temp_target">Врем. цель</string>
     <string name="until">до</string>
     <string name="default_range">ДИАПАЗОН ПО УМОЛЧАНИЮ</string>
     <string name="target">целевое значение ГК:</string>
-    <string name="rate_duration">Скорость: %1$.2fед/ч (%2$.2f%%) \nПродолжительность %3$d мин</string>
+    <string name="rate_duration">Скорость: %1$.2f ед/ч (%2$.2f%%)\nПродолжительность: %3$d мин</string>
     <string name="no_profile">Профиль не загружен</string>
     <string name="aps_only">Применять только в режиме APS!</string>
     <string name="last_aps_result_na">Последний результат недоступен!</string>
     <string name="loop_status_closed">ЗАМКНУТЫЙ ЦИКЛ</string>
     <string name="loop_status_open">ОТКРЫТЫЙ ЦИКЛ</string>
-    <string name="loop_status_lgs">Приостановка на Низких</string>
+    <!-- FIX: "Приостановка на Низких" → понятная формулировка -->
+    <string name="loop_status_lgs">Приостановка при низкой ГК</string>
     <string name="loop_status_disabled">ЦИКЛ ВЫКЛЮЧЕН</string>
-    <string name="last_run">Предыдущее выполнение</string>
-    <string name="last_enact">Предыдущая активация</string>
-    <string name="tdd_line">%1$.2fед%1$.0f%%</string>
+    <!-- ADDED -->
+    <string name="aps">APS</string>
+    <!-- FIX: "Предыдущее выполнение" → "Последний запуск" (EN: "Last run") -->
+    <string name="last_run">Последний запуск</string>
+    <!-- FIX: "Предыдущая активация" → "Последняя активация" (EN: "Last Enact") -->
+    <string name="last_enact">Последняя активация</string>
+    <!-- FIX: добавлен пробел между значениями -->
+    <string name="tdd_line">%1$.2f ед %1$.0f%%</string>
     <string name="today">Сегодня</string>
     <string name="weighted">взвешенный</string>
     <string name="full_xdrip_sync_comment">Полная синхронизация? Это может занять длительное время и до завершения вы не увидите новые данные в xDrip+.</string>
+
     <string name="wear_action_loop_state_unauthorized">Повторите попытку.</string>
     <string name="wear_action_loop_state_invalid">Запрошено неверное состояние цикла</string>
-    <string name="wear_action_running_mode_title">Режим бега</string>
-    <string name="wear_action_loop_state_changed_with_duration">%1$s\n Продолжительность: %2$d мин</string>
+    <!-- FIX: "Режим бега" (физический бег!) → "РЕЖИМ РАБОТЫ" (EN: "RUNNING MODE" = режим работы цикла) -->
+    <string name="wear_action_running_mode_title">РЕЖИМ РАБОТЫ</string>
+    <!-- FIX: убран лишний пробел после \n -->
+    <string name="wear_action_loop_state_changed_with_duration">%1$s\nПродолжительность: %2$d мин</string>
+
     <string name="wear_action_loop_state_now_closed">Закрытый цикл</string>
     <string name="wear_action_loop_state_now_lgs">Приостановка при низком уровне глюкозы</string>
     <string name="wear_action_loop_state_now_open">Открытый цикл</string>
     <string name="wear_action_loop_state_now_suspended">Цикл приостановлен</string>
-    <string name="wear_action_loop_state_now_resumed">Цикл возобновлен</string>
-    <string name="wear_action_loop_state_now_disabled">Отключить Цикл</string>
+    <string name="wear_action_loop_state_now_resumed">Цикл возобновлён</string>
+    <string name="wear_action_loop_state_now_disabled">Отключить цикл</string>
     <string name="wear_action_loop_state_now_pump_suspended">Работа помпы приостановлена</string>
     <string name="wear_action_loop_state_now_superbolus">Суперболюс</string>
     <string name="wear_action_loop_state_now_invalid">Недопустимое состояние</string>
     <string name="wear_action_loop_state_now_pump_disconnected">Отсоединить помпу</string>
     <string name="wear_action_loop_state_now_pump_reconnected">Подключить помпу</string>
     <string name="garmin_request_key">Ключ запроса</string>
+
+    <!-- SMS Communicator & OTP Authenticator -->
     <string name="smscommunicator">SMS-коммуникатор</string>
-    <string name="description_sms_communicator">Удаленное управление AAPS с помощью SMS-команд.</string>
+    <!-- ADDED -->
+    <string name="smscommunicator_shortname">SMS</string>
+    <string name="description_sms_communicator">Удалённое управление AAPS с помощью SMS-команд.</string>
     <string name="smscommunicator_code_from_authenticator_for">из приложения Authenticator для: %1$s, затем PIN</string>
     <string name="smscommunicator_tab_otp_label">Настройка Authenticator</string>
     <string name="smscommunicator_code_verify_label">Код для проверки:</string>
-    <string name="smscommunicator_code_verify_info">Код проверки состоит из 6 цифр, отображаемых приложением Authenticator (называемых OTP), за которыми следуют 3 или более цифр обязательного PIN-кода.</string>
+    <!-- ADDED -->
+    <string name="smscommunicator_code_verify_hint">OTP + PIN</string>
+    <string name="smscommunicator_code_verify_info">Код проверки состоит из 6 цифр, отображаемых приложением Authenticator (OTP), за которыми следуют 3 или более цифр обязательного PIN-кода.</string>
     <string name="smscommunicator_otp_reset_btn">Сбросить аутентификаторы</string>
-    <string name="smscommunicator_otp_reset_title">Сбросить ключ</string>
+    <!-- FIX: "Сбросить ключ" → полное название как в EN: "Reset Authenticator Key" -->
+    <string name="smscommunicator_otp_reset_title">Сбросить ключ Authenticator</string>
     <string name="smscommunicator_otp_reset_prompt">Вы уверены, что хотите сбросить ключ Authenticator? Это сделает все настроенные Authenticator недействительными, и вам нужно будет настроить их заново.</string>
     <string name="smscommunicator_otp_step1_install_header">1. Установите Authenticator</string>
     <string name="smscommunicator_otp_step2_provisioning_header">2. Отсканируйте код для настройки OTP-кодов AAPS</string>
     <string name="smscommunicator_otp_step3_test_header">3. Проверьте одноразовый пароль (OTP)</string>
     <string name="smscommunicator_otp_reset_header">Сброс Authenticator</string>
-    <string name="smscommunicator_otp_install_info">На каждом телефоне последователя установите приложение Authenticator, которое поддерживает токены TOTP RFC 6238. Популярные бесплатные приложения:\n • Authy\n • Google Authenticator\n • LastPass Authenticator\n • FreeOTP Authenticator</string>
+    <string name="smscommunicator_otp_install_info">На каждом телефоне наблюдателя установите приложение Authenticator, поддерживающее токены TOTP RFC 6238. Популярные бесплатные приложения:\n • Authy\n • Google Authenticator\n • LastPass Authenticator\n • FreeOTP Authenticator</string>
     <string name="smscommunicator_otp_reset_warning">При сбросе Authenticator все настроенные Authenticator станут недействительными. Вам нужно будет настроить их заново!</string>
+    <!-- ADDED -->
+    <string name="smscommunicator_otp_verification_ok">OK</string>
     <string name="smscommunicator_otp_verification_ivalid_size">НЕВЕРНЫЙ РАЗМЕР!</string>
     <string name="smscommunicator_otp_verification_wrong_pin">НЕВЕРНЫЙ PIN</string>
+    <!-- ADDED -->
+    <string name="smscommunicator_otp_verification_wrong_otp">НЕВЕРНЫЙ OTP</string>
+    <!-- ADDED -->
+    <string name="sms_wrong_code">Неверный код. Команда отменена.</string>
+    <!-- ADDED -->
+    <string name="sms_timeout_while_waiting">Превышено время ожидания завершения предыдущего сеанса связи с помпой</string>
+    <!-- ADDED: 26 отсутствующих строк SMS-коммуникатора -->
+    <string name="smscommunicator_bolus_reply_with_code">Для подачи болюса %1$.2f ед ответьте кодом %2$s</string>
+    <string name="smscommunicator_meal_bolus_reply_with_code">Для подачи болюса на еду %1$.2f ед ответьте кодом %2$s</string>
+    <string name="smscommunicator_temptarget_with_code">Для установки Временной Цели %1$s ответьте кодом %2$s</string>
+    <string name="smscommunicator_temptarget_cancel">Для отмены Временной Цели ответьте кодом %1$s</string>
+    <string name="smscommunicator_stops_ns_with_code">Для отключения SMS-управления ответьте кодом %1$s.\n\nУчтите, что повторно включить его можно только непосредственно с главного смартфона AAPS.</string>
+    <string name="smscommunicator_stopped_sms">SMS-управление остановлено. Для повторного включения используйте AAPS на главном смартфоне.</string>
+    <string name="smscommunicator_calibration_reply_with_code">Для отправки калибровки %1$.2f ответьте кодом %2$s</string>
+    <string name="smscommunicator_bolus_failed">Болюс не выполнен. Проверьте реальное состояние перед отправкой следующей команды!</string>
+    <string name="smscommunicator_bolus_delivered">Болюс %1$.2f ед успешно доставлен</string>
+    <string name="smscommunicator_meal_bolus_delivered">Болюс на еду %1$.2f ед успешно доставлен</string>
+    <string name="smscommunicator_meal_bolus_delivered_tt">Цель %1$s на %2$d минут</string>
+    <string name="smscommunicator_tt_set">Цель %1$s на %2$d минут установлена успешно</string>
+    <string name="smscommunicator_tt_canceled">Временная Цель успешно отменена</string>
+    <string name="smscommunicator_loop_has_been_disabled">Цикл отключён</string>
+    <string name="smscommunicator_loop_is_enabled">Цикл включён</string>
+    <string name="smscommunicator_pump_connect_with_code">Для подключения помпы ответьте кодом %1$s</string>
+    <string name="smscommunicator_pump_connect_fail">Подключение к помпе не удалось</string>
+    <string name="smscommunicator_pump_disconnect_with_code">Для отсоединения помпы на %1$d минут ответьте кодом %2$s</string>
+    <string name="smscommunicator_pump_disconnected">Помпа отсоединена</string>
+    <string name="smscommunicator_reconnect">Помпа подключена</string>
+    <string name="smscommunicator_remote_command_not_allowed">Удалённая команда не разрешена</string>
+    <string name="smscommunicator_remote_command_not_possible">Удалённая команда невозможна</string>
+    <string name="smscommunicator_remote_bolus_not_allowed">Удалённый болюс недоступен. Попробуйте позже.</string>
+    <string name="smscommunicator_basal_reply_with_code">Для запуска базала %1$.2f ед/ч на %2$d мин ответьте кодом %3$s</string>
+    <string name="smscommunicator_profile_reply_with_code">Для переключения профиля на %1$s %2$d%% ответьте кодом %3$s</string>
+    <string name="smscommunicator_extended_reply_with_code">Для запуска пролонгированного болюса %1$.2f ед на %2$d мин ответьте кодом %3$s</string>
     <string name="smscommunicator_carbs_reply_with_code">Чтобы ввести %1$d г углеводов в %2$s, ответьте кодом %3$s</string>
     <string name="smscommunicator_basal_pct_reply_with_code">Чтобы запустить базал %1$d%% на %2$d мин, ответьте кодом %3$s</string>
     <string name="smscommunicator_suspend_reply_with_code">Чтобы приостановить цикл на %1$d мин, ответьте кодом %2$s</string>
@@ -140,35 +239,40 @@
     <string name="smscommunicator_loop_disable_reply_with_code">Чтобы отключить цикл, ответьте кодом %1$s</string>
     <string name="smscommunicator_restart_reply_with_code">Чтобы перезапустить AAPS, ответьте кодом %1$s</string>
     <string name="smscommunicator_restarting">AAPS перезапускается</string>
-    <string name="smscommunicator_tempbasal_set">Временный базал %1$.2f Ед/ч на %2$d мин успешно запущен</string>
-    <string name="smscommunicator_extended_set">Расширенный болюс %1$.2f Ед на %2$d мин успешно запущен</string>
+    <string name="smscommunicator_tempbasal_set">Временный базал %1$.2f ед/ч на %2$d мин успешно запущен</string>
+    <!-- FIX: "Расширенный" → "Пролонгированный" (consistent term) -->
+    <string name="smscommunicator_extended_set">Пролонгированный болюс %1$.2f ед на %2$d мин успешно запущен</string>
     <string name="smscommunicator_carbs_set">Углеводы %1$d г успешно введены</string>
     <string name="smscommunicator_carbs_failed">Ввод углеводов %1$d г не удался</string>
-    <string name="smscommunicator_tempbasal_set_percent">Временный базал %1$d%% на %2$d мин успешно начат</string>
+    <string name="smscommunicator_tempbasal_set_percent">Временный базал %1$d%% на %2$d мин успешно запущен</string>
     <string name="smscommunicator_tempbasal_failed">Запуск временного базала не удался</string>
-    <string name="smscommunicator_extended_failed">Запуск расширенного болюса не удался</string>
+    <string name="smscommunicator_extended_failed">Запуск пролонгированного болюса не удался</string>
     <string name="smscommunicator_basal_stop_reply_with_code">Чтобы остановить временный базал, ответьте кодом %1$s</string>
-    <string name="smscommunicator_extended_stop_reply_with_code">Чтобы остановить расширенный болюс, ответьте кодом %1$s</string>
-    <string name="smscommunicator_tempbasal_canceled">Временный базал отменен</string>
-    <string name="smscommunicator_extended_canceled">Расширенный болюс отменен</string>
+    <string name="smscommunicator_extended_stop_reply_with_code">Чтобы остановить пролонгированный болюс, ответьте кодом %1$s</string>
+    <string name="smscommunicator_tempbasal_canceled">Временный базал отменён</string>
+    <string name="smscommunicator_extended_canceled">Пролонгированный болюс отменён</string>
     <string name="smscommunicator_tempbasal_cancel_failed">Отмена временного базала не удалась</string>
-    <string name="smscommunicator_extended_cancel_failed">Отмена расширенного болюса не удалась</string>
+    <string name="smscommunicator_extended_cancel_failed">Отмена пролонгированного болюса не удалась</string>
     <string name="smscommunicator_unknown_command">Неизвестная команда или неправильный ответ</string>
     <string name="smscommunicator_another_bolus_in_queue">В очереди уже есть болюс. Попробуйте позже.</string>
     <string name="smscommunicator_wrong_duration">Неправильная продолжительность</string>
-    <string name="smscommunicator_loop_suspended">Контур приостановлен</string>
-    <string name="smscommunicator_loop_resumed">Контур возобновлен</string>
+    <!-- FIX: "Контур" → "Цикл" (согласованность: везде используется "цикл") -->
+    <string name="smscommunicator_loop_suspended">Цикл приостановлен</string>
+    <string name="smscommunicator_loop_resumed">Цикл возобновлён</string>
     <string name="smscommunicator_invalid_phone_number">Неверный номер телефона для SMS</string>
-    <string name="smscommunicator_calibration_sent">Калибровка отправлена. Прием должен быть включен в xDrip+.</string>
+    <string name="smscommunicator_calibration_sent">Калибровка отправлена. Приём должен быть включён в xDrip+.</string>
     <string name="smscommunicator_calibration_failed">xDrip+ не принимает калибровки</string>
     <string name="smscommunicator_message_body">Неверное тело сообщения</string>
-    <string name="smscommunicator_set_lgs_reply_with_code">Чтобы переключить режим контура на LGS (приостановка при низком глюкоозе), ответьте кодом %1$s</string>
-    <string name="smscommunicator_set_closed_loop_reply_with_code">Чтобы переключить режим контура на Закрытый цикл, ответьте кодом %1$s</string>
+    <!-- FIX: опечатка "глюкоозе" → "глюкозе" -->
+    <string name="smscommunicator_set_lgs_reply_with_code">Чтобы переключить режим цикла на LGS (приостановка при низкой глюкозе), ответьте кодом %1$s</string>
+    <string name="smscommunicator_set_closed_loop_reply_with_code">Чтобы переключить режим цикла на Закрытый цикл, ответьте кодом %1$s</string>
     <string name="smscommunicator_current_loop_mode">Текущий работающий режим: %1$s</string>
     <string name="wrong_format">Неверный формат</string>
     <string name="sms_actual_bg">Глюкоза:</string>
     <string name="sms_last_bg">Последний BG:</string>
     <string name="sms_delta">Дельта:</string>
+    <!-- ADDED -->
+    <string name="sms_iob">IOB:</string>
     <string name="sms_bolus">Болюс:</string>
     <string name="sms_basal">Базал:</string>
     <string name="sms_min_ago">%1$d мин назад</string>
@@ -177,5 +281,7 @@
     <string name="sms_profile_switch_created">Смена профиля создана</string>
     <string name="sms_wrong_tbr_duration">Продолжительность TBR должна быть кратна %1$d минутам и больше 0.</string>
     <string name="a11y_otp_qr_code">QR-код для настройки одноразового пароля</string>
-    <string name="permission_sms_description">Приложению требуется разрешение SMS для удаленного управления с помощью текстовых сообщений.</string>
+    <!-- ADDED -->
+    <string name="permission_sms_title">SMS</string>
+    <string name="permission_sms_description">Приложению требуется разрешение SMS для удалённого управления с помощью текстовых сообщений.</string>
 </resources>

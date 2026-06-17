@@ -1,41 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="ns_client_bg">ГК с клиента Nightscout</string>
-    <string name="ns_client_bg_short">ГК с NS</string>
-    <string name="description_source_ns_client">Получать данные гликемии с сайта Nightscout</string>
-    <string name="source_xdrip">ГК с xDrip+ </string>
-    <string name="description_source_xdrip">Получать значения ГК от xDrip+ и совместимых приложений (Juggluco и т.д.).</string>
-    <string name="dexcom_app_patched">Самост собран прилож Dexcom</string>
-    <string name="dexcom_short">ССП DEXCOM</string>
-    <string name="description_source_dexcom">Получать данные ГК от \'Самостоятельно собранного приложения Dexcom\'.</string>
-    <string name="description_source_glimp">Получать данные гликемии от Glimp.</string>
-    <string name="description_source_mm640g">Получать данные гликемии от 600SeriesAndroidUploader.</string>
-    <string name="description_source_poctech">Получать данные гликемии от приложения Poctech</string>
-    <string name="glunovo">Приложение Glunovo</string>
-    <string name="description_source_glunovo">Получать данные гликемии от приложения Glunovo</string>
-    <string name="intelligo">Приложение Intelligo</string>
-    <string name="description_source_intelligo">Получать данные гликемии от приложения Intelligo</string>
-    <string name="tomato">Томато (MiaoMiao)</string>
-    <string name="tomato_short">Томато</string>
-    <string name="description_source_tomato">Получать значения ГК от приложения Tomato (устройство MiaoMiao)</string>
-    <string name="random_bg">Случайные значения ГК</string>
-    <string name="description_source_random_bg">Генерировать случайные данные ГК (только демо-режим)</string>
+    <!-- Source -->
+    <string name="ns_client_bg">NSClient ГК</string>
+    <string name="ns_client_bg_short">NS ГК</string>
+    <string name="description_source_ns_client">Загружает данные ГК из Nightscout</string>
+    <string name="source_xdrip">xDrip+ ГК</string>
+    <string name="description_source_xdrip">Получает значения ГК из xDrip+ и совместимых приложений (Juggluco и др.).</string>
+    <string name="dexcom_app_patched">BYODA</string>
+    <string name="dexcom_short">BYODA</string>
+    <string name="description_source_dexcom">Получает значения ГК из приложения «Build Your Own Dexcom App».</string>
+    <string name="glimp">Glimp</string>
+    <string name="description_source_glimp">Получает значения ГК из приложения Glimp.</string>
+    <string name="mm640g">MM640g</string>
+    <string name="description_source_mm640g">Получает значения ГК из приложения 600SeriesAndroidUploader.</string>
+    <string name="poctech">Poctech</string>
+    <string name="description_source_poctech">Получает значения ГК из приложения Poctech</string>
+    <string name="glunovo">Glunovo</string>
+    <string name="description_source_glunovo">Получает значения из приложения Glunovo</string>
+    <string name="intelligo">Intelligo</string>
+    <string name="description_source_intelligo">Получает значения из приложения Intelligo</string>
+    <string name="tomato">Tomato (MiaoMiao)</string>
+    <string name="tomato_short">Tomato</string>
+    <string name="description_source_tomato">Получает значения ГК из приложения Tomato (устройство MiaoMiao)</string>
+    <string name="random_bg">Случайная ГК</string>
+    <string name="description_source_random_bg">Генерирует случайные данные ГК (только в демо-режиме)</string>
     <string name="random_bg_short">ГК</string>
-    <string name="description_source_patched_syai_tag_app">Получать данные гликемии от приложения Syai/Ottai.</string>
-    <string name="description_source_patched_si_app">Получать данные из патч приложения Sibionic SI.</string>
-    <string name="description_source_patched_sino_app">Получать данные от патч-приложения Sino App.</string>
-    <string name="description_source_instara_app">Получение значений ГК из приложения Instara</string>
+
+    <!-- Patched Syai Tag App -->
+    <string name="syai_tag_app">Syai</string>
+    <string name="description_source_patched_syai_tag_app">Получает данные о глюкозе из приложения Syai/Ottai.</string>
+    <!-- Patched SI App -->
+    <string name="patched_si_app">SI App</string>
+    <string name="description_source_patched_si_app">Получает данные о глюкозе из модифицированного приложения Sibionic SI.</string>
+    <!-- Patched Sino App -->
+    <string name="patched_sino_app">Sino App</string>
+    <string name="description_source_patched_sino_app">Получает данные о глюкозе из модифицированного приложения Sino.</string>
+
+    <!-- Instara App -->
+    <string name="instara_app">Instara</string>
+    <string name="description_source_instara_app">Получает значения ГК из приложения Instara.</string>
+    <!-- Instara preferences -->
     <string name="pref_title_instara_history_request">Запрос исторических данных Instara</string>
-    <string name="pref_summary_instara_history_request">Запрос возможных пропущенных исторических данных в фоне</string>
+    <string name="pref_summary_instara_history_request">Запрашивать в фоновом режиме возможно пропущенные исторические данные</string>
+
+    <!-- Notification Reader -->
     <string name="notification_reader">Чтение уведомлений</string>
-    <string name="description_source_notification_reader">Чтение значений глюкозы из уведомлений официальных CGM приложений (Dexcom, Medtronic, Eversense и др.)</string>
-    <string name="permission_dexcom_description">Приложению требуется разрешение на получение CGM данных от приложения Dexcom</string>
+    <string name="description_source_notification_reader">Считывает значения глюкозы из уведомлений официальных приложений CGM (Dexcom, Medtronic, Eversense и др.).</string>
+    <!-- Permission rationales -->
+    <string name="permission_dexcom_title">Dexcom CGM</string>
+    <string name="permission_dexcom_description">Приложению необходимо разрешение для получения данных CGM из приложения Dexcom</string>
     <string name="permission_notification_listener_title">Доступ к уведомлениям</string>
-    <string name="permission_notification_listener_description">Требуется для чтения значений глюкозы из уведомлений CGM приложений</string>
-    <string name="description_source_aidex">Получение CGM значений от LinX, LinX vista, Equil G. Smart 2, Diaexpert 2 и т.д.</string>
-    <string name="aidex_sensor_expired">Сенсор просрочен, замените на новый сенсор</string>
-    <string name="aidex_sensor_error">Ошибка сенсора, проверьте статус сенсора</string>
+    <string name="permission_notification_listener_description">Необходимо для считывания значений глюкозы из уведомлений приложений CGM</string>
+
+    <string name="aidex">MicroTech CGM App</string>
+    <string name="aidex_short">CGM</string>
+    <string name="description_source_aidex">Получает данные CGM из LinX, LinX Vista, Equil G, Smart 2, Diaexpert 2 и др.</string>
+
+    <string name="aidex_sensor_expired">Срок действия сенсора истёк — замените его новым</string>
+    <string name="aidex_sensor_error">Ошибка сенсора — проверьте его состояние</string>
     <string name="aidex_sensor_stabilizing">Сенсор стабилизируется, подождите…</string>
-    <string name="aidex_sensor_replace">Требуется замена сенсора, замените на новый как можно скорее</string>
-    <string name="aidex_signal_lost">Сигнал сенсора потерян, проверьте соединение</string>
+
+    <string name="aidex_sensor_replace">Требуется замена сенсора — замените его как можно скорее</string>
+    <string name="aidex_signal_lost">Сигнал сенсора потерян — проверьте подключение</string>
+
 </resources>

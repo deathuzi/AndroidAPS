@@ -946,6 +946,8 @@ open class OpenAPSAutoISFPlugin @Inject constructor(
             BooleanKey.ApsAutoIsfLowTtLowersSens,
             IntKey.ApsAutoIsfHalfBasalExerciseTarget,
             BooleanKey.ApsUseSmb,
+            BooleanKey.ApsDisableCgmWhitelistForSmb,
+            BooleanKey.ApsAllowRecalculatedBg,
             BooleanKey.ApsUseSmbWithHighTt,
             BooleanKey.ApsUseSmbAlways,
             BooleanKey.ApsUseSmbWithCob,

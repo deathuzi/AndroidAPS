@@ -8,7 +8,8 @@
     <string name="optimizing_database">Оптимизация базы данных…</string>
     <string name="initializing_plugins">Инициализация плагинов…</string>
     <string name="initializing">Инициализация…</string>
-    <string name="migrating_profile_switches">Перенос переключателей профиля…</string>
-    <string name="migrating_effective_profile_switches">Перенос эффективных переключателей профиля…</string>
+    <string name="migrating_profile_switches">Перенос переключений профиля…</string>
+    <string name="migrating_effective_profile_switches">Перенос эффективных переключений профиля…</string>
     <string name="migrating_boluses">Перенос болюсов…</string>
+
 </resources>

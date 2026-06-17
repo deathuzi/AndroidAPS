@@ -91,7 +91,14 @@ class SafetyPlugin @Inject constructor(
     }
 
     override suspend fun isAdvancedFilteringEnabled(value: Constraint<Boolean>): Constraint<Boolean> {
-        if (!persistenceLayer.isAdvancedFilteringSupported()) value.set(false, rh.gs(R.string.smbalwaysdisabled), this)
+        // Allow SMB if advanced filtering is supported, OR if whitelist is disabled, OR if recalculated BG is allowed
+        val advancedFilteringSupported = persistenceLayer.isAdvancedFilteringSupported()
+        val disableCgmWhitelist = preferences.get(app.aaps.core.keys.BooleanKey.ApsDisableCgmWhitelistForSmb)
+        val allowRecalculatedBg = preferences.get(app.aaps.core.keys.BooleanKey.ApsAllowRecalculatedBg)
+
+        if (!advancedFilteringSupported && !disableCgmWhitelist && !allowRecalculatedBg) {
+            value.set(false, rh.gs(R.string.smbalwaysdisabled), this)
+        }
         return value
     }
 

@@ -64,19 +64,19 @@ enum class BooleanKey(
     ApsUseSmbWithHighTt("enableSMB_with_high_temptarget", false, R.string.pref_title_aps_use_smb_with_high_tt, R.string.pref_summary_aps_use_smb_with_high_tt, defaultedBySM = true, dependency = ApsUseSmb),
     ApsUseSmbAlways(
         "enableSMB_always", true, R.string.pref_title_aps_use_smb_always, R.string.pref_summary_aps_use_smb_always, defaultedBySM = true, dependency = ApsUseSmb,
-        visibility = PreferenceVisibility { it.preferences.get(ApsDisableCgmWhitelistForSmb) || it.advancedFilteringSupported }
+        visibility = PreferenceVisibility { it.advancedFilteringSupported || it.preferences.get(ApsDisableCgmWhitelistForSmb) || it.preferences.get(ApsAllowRecalculatedBg) }
     ),
     ApsUseSmbWithCob(
         "enableSMB_with_COB", true, R.string.pref_title_aps_use_smb_with_cob, R.string.pref_summary_aps_use_smb_with_cob, defaultedBySM = true, dependency = ApsUseSmb,
-        visibility = PreferenceVisibility { !it.preferences.get(ApsUseSmbAlways) || !it.advancedFilteringSupported }
+        visibility = PreferenceVisibility { !it.preferences.get(ApsUseSmbAlways) && (it.advancedFilteringSupported || it.preferences.get(ApsDisableCgmWhitelistForSmb) || it.preferences.get(ApsAllowRecalculatedBg)) }
     ),
     ApsUseSmbWithLowTt(
         "enableSMB_with_temptarget", true, R.string.pref_title_aps_use_smb_with_low_tt, R.string.pref_summary_aps_use_smb_with_low_tt, defaultedBySM = true, dependency = ApsUseSmb,
-        visibility = PreferenceVisibility { !it.preferences.get(ApsUseSmbAlways) || !it.advancedFilteringSupported }
+        visibility = PreferenceVisibility { !it.preferences.get(ApsUseSmbAlways) && (it.advancedFilteringSupported || it.preferences.get(ApsDisableCgmWhitelistForSmb) || it.preferences.get(ApsAllowRecalculatedBg)) }
     ),
     ApsUseSmbAfterCarbs(
         "enableSMB_after_carbs", true, R.string.pref_title_aps_use_smb_after_carbs, R.string.pref_summary_aps_use_smb_after_carbs, defaultedBySM = true, dependency = ApsUseSmb,
-        visibility = PreferenceVisibility { !it.preferences.get(ApsUseSmbAlways) && it.advancedFilteringSupported }
+        visibility = PreferenceVisibility { !it.preferences.get(ApsUseSmbAlways) && (it.advancedFilteringSupported || it.preferences.get(ApsDisableCgmWhitelistForSmb) || it.preferences.get(ApsAllowRecalculatedBg)) }
     ),
     ApsUseUam("use_uam", true, R.string.pref_title_aps_use_uam, R.string.pref_summary_aps_use_uam, defaultedBySM = true),
     ApsSensitivityRaisesTarget(

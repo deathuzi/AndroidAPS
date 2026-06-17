@@ -10,7 +10,7 @@
     <string name="combov2_warning_10">Сбой Bluetooth; повторить сопряжение</string>
     <string name="combov2_error_1">Резервуар помпы пуст</string>
     <string name="combov2_error_2">Батарея разряжена</string>
-    <string name="combov2_error_4">закупорка</string>
+    <string name="combov2_error_4">Оклюзия</string>
     <string name="combov2_error_5">Завершение резервирования данных помпы</string>
     <string name="combov2_error_6">Механическая ошибка</string>
     <string name="combov2_error_7">Ошибка электроники</string>

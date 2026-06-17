@@ -1,35 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- ИСПРАВЛЕНО: унифицирован порядок «летнее/зимнее» (в оригинале обе строки — Daylight Saving Time) -->
     <string name="dst_in_24h_warning">Переход на летнее/зимнее время через 24 часа или менее</string>
-    <string name="dst_loop_disabled_warning">Переход на зимнее/летнее время произошел менее 3 часов назад - Закрытый цикл выключен</string>
-    <string name="disk_full">Освободите по крайней мере %1$d MB из внутренней памяти! Цикл остановлен!</string>
-    <string name="application_expired">Истек срок действия приложения</string>
-    <string name="running_invalid_version">Мы обнаружили, что вы используете недопустимую версию. Цикл отключен!</string>
+    <!-- ИСПРАВЛЕНО: «произошёл» (ё), «летнее/зимнее» (единообразие), «Замкнутый цикл отключён» (согласовано с остальным файлом) -->
+    <string name="dst_loop_disabled_warning">Переход на летнее/зимнее время произошёл менее 3 часов назад — замкнутый цикл отключён</string>
+
+    <!-- ИСПРАВЛЕНО: «отключён» вместо «остановлен» (оригинал: Loop disabled, не stopped) -->
+    <string name="disk_full">Освободите не менее %1$d МБ во внутренней памяти! Цикл отключён!</string>
+
+    <!-- ИСПРАВЛЕНО: «Истёк» (ё) -->
+    <string name="application_expired">Истёк срок действия приложения</string>
+    <string name="running_invalid_version">Мы обнаружили, что вы используете недопустимую версию. Цикл отключён!</string>
     <string name="versionavailable">Доступна версия %1$s</string>
-    <string name="version_expire">Версия %1$s истекает %2$s и переходит в режим приостановки на низких</string>
+    <!-- ИСПРАВЛЕНО: «режим LGS» вместо «режим приостановки на низких» — устоявшееся название в AAPS-сообществе -->
+    <string name="version_expire">Версия %1$s истекает %2$s и перейдёт в режим LGS</string>
+
     <string name="recalculated_data_used">Используются пересчитанные данные</string>
     <string name="bg_too_close">ГК слишком близко:\n%1$s\n%2$s</string>
     <string name="a11y_bg_quality_recalculated">пересчитано</string>
     <string name="a11y_bg_quality_doubles">двойные записи</string>
-    <string name="a11y_bg_quality_flat">Неменяющиеся данные. Принимаю за неверные</string>
+    <!-- ИСПРАВЛЕНО: «Неменяющиеся» — несуществующее слово; «расценивается» вместо первого лица -->
+    <string name="a11y_bg_quality_flat">Постоянные данные. Расцениваются как недостоверные</string>
+
     <string name="limitingextendedbolus">Ограничиваю пролонгированный болюс до %1$.1f ед. из-за %2$s</string>
-    <string name="limitingcarbs">Ограничение углеводов до %1$d г из-за %2$s</string>
+    <!-- ИСПРАВЛЕНО: «Ограничиваю» вместо «Ограничение» — единообразие с limitingextendedbolus -->
+    <string name="limitingcarbs">Ограничиваю углеводы до %1$d г из-за %2$s</string>
+
     <string name="safety">Безопасность</string>
-    <string name="pumpisnottempbasalcapable">Помпа не рассчитана на подачу временного базала</string>
-    <string name="closed_loop_disabled_on_dev_branch">Работает версия разработчика. Замкнутый цикл отключен.</string>
-    <string name="closed_loop_disabled_with_eb">Замкнутый цикл отключен из-за работы Пролонгированного Болюса</string>
-    <string name="smbalwaysdisabled">Опция супер микро болюс всегда и после углеводов отключена т. к. активный источник ГК не поддерживает комплексное фильтрование</string>
-    <string name="smbnotallowedinopenloopmode">Микроболюсы SMB не работают в режиме открытого цикла</string>
+    <string name="pumpisnottempbasalcapable">Помпа не поддерживает временный базал</string>
+    <string name="closed_loop_disabled_on_dev_branch">Запущена версия разработчика. Замкнутый цикл отключён.</string>
+    <!-- ИСПРАВЛЕНО: строчные буквы у «пролонгированного болюса» -->
+    <string name="closed_loop_disabled_with_eb">Замкнутый цикл отключён из-за активного пролонгированного болюса</string>
+    <!-- ИСПРАВЛЕНО: SMB вместо «Опция супер микро болюс», «расширенную фильтрацию» вместо «комплексное фильтрование», «так как» вместо «т. к.» -->
+    <string name="smbalwaysdisabled">SMB «всегда» и «после углеводов» отключены, так как активный источник ГК не поддерживает расширенную фильтрацию</string>
+    <string name="smbnotallowedinopenloopmode">SMB не работают в режиме открытого цикла</string>
     <string name="maxvalueinpreferences">максимальное значение в настройках</string>
-    <string name="hardlimit">жесткий предел</string>
+    <!-- ИСПРАВЛЕНО: «жёсткий» (ё) -->
+    <string name="hardlimit">жёсткий предел</string>
+
     <string name="completed_well_done">Завершено, отлично!</string>
-    <string name="not_completed_yet">Не завершено</string>
+    <!-- ИСПРАВЛЕНО: добавлено «Ещё» (потеряно «yet» из оригинала) -->
+    <string name="not_completed_yet">Ещё не завершено</string>
     <string name="time_elapsed">Прошло времени</string>
     <string name="hasbgdata">ГК доступна из выбранного источника</string>
     <string name="synchaswritepermission">Служба синхронизации имеет разрешение на запись</string>
     <string name="loopenabled">Цикл активирован</string>
     <string name="apsselected">Выбран APS</string>
-    <string name="closedmodeenabled">Режим замкнутого цикла включен</string>
+    <string name="closedmodeenabled">Режим замкнутого цикла включён</string>
     <string name="objectives_shortname">ЦЕЛИ</string>
     <string name="description_objectives">Обучающая программа</string>
     <string name="doyouwantresetstart">Хотите сбросить начатую цель? Вы можете потерять весь прогресс по ней.</string>

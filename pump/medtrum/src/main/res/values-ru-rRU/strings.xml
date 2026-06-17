@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="medtrum">Медтрум</string>
+    <string name="medtrum">Medtrum</string>
     <string name="medtrum_pump_description">Интеграция с помпами Medtrum Nano и Medtrum 300U</string>
     <string name="medtrum_pump_setting">Настройки Medtrum</string>
     <string name="pump_error">Ошибка помпы: %1$s !! </string>
@@ -96,7 +96,7 @@
     <string name="press_next_or_OK">Нажмите </string>
     <string name="activation_in_progress">Ой! Что-то пошло не так, вероятно, активация уже запущена.</string>
     <string name="press_retry_or_discard">Нажмите </string>
-    <string name="reading_activation_status">подождите, получение статуса активации с помпы.</string>
+    <string name="reading_activation_status">Подождите, получение статуса активации с помпы.</string>
     <string name="alarm_setting_title">Настройки оповещений</string>
     <string name="alarm_setting_summary">Выберите предпочитаемые параметры оповещений помпы.</string>
     <string name="alarm_setting_light_vibrate_beep">Подсветка, вибрация и звук</string>
