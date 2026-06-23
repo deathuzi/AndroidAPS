@@ -889,7 +889,7 @@
     <string name="pump_running">Помпа работает</string>
     <string name="pumpsuspended">Помпа приостановлена</string>
     <string name="record">Запись</string>
-    <string name="required">Нужно</string>
+    <string name="required"> г нужно</string>
     <string name="resettodefaults">Сбросить на defaults</string>
     <string name="running_mode">Режим работы</string>
     <string name="scene">Сцена</string>
