@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- AAPSClient -->
+    <!-- ns_wifi_ssids moved to core:keys module -->
     <string name="connection_settings_title">Параметры подключения</string>
     <string name="description_ns_client">Синхронизирует данные с Nightscout при помощи API v1</string>
     <string name="description_ns_client_v3">Синхронизирует данные с Nightscout при помощи API v3</string>
@@ -37,13 +38,10 @@
     <!-- Tidepool -->
     <string name="summary_tidepool_dev_servers">Если включено, выгрузка будет направлена на тестовые серверы вместо обычных</string>
     <string name="title_tidepool_dev_servers">Использовать серверы интеграции (тест)</string>
-    <!-- ADDED -->
     <string name="tidepool">Tidepool</string>
-    <!-- ADDED -->
     <string name="tidepool_shortname">TDP</string>
     <string name="description_tidepool">Загружает данные в Tidepool</string>
-    <!-- FIX: "Выгрузить (передать данные) сейчас" — избыточно → компактно -->
-    <string name="upload_now">Загрузить сейчас</string>
+    <string name="upload_now">Выгрузить (передать данные) сейчас</string>
     <string name="not_connected">Нет подключения</string>
     <string name="read_only">Только чтение</string>
     <string name="working">Обработка</string>
@@ -69,7 +67,6 @@
     <string name="tizen_description">Включает передачу данных в различные внешние приложения-компаньоны</string>
 
     <!-- GarminPlugin -->
-    <!-- ADDED -->
     <string name="garmin">Garmin</string>
     <string name="garmin_description">Подключение к устройству Garmin (Fenix, Edge, …)</string>
     <string name="garmin_local_http_server_port">Порт локального HTTP-сервера</string>
@@ -108,7 +105,6 @@
     <string name="wear_infos_watchface">Циферблат Infos</string>
     <string name="wear_export_watchface">Экспортировать шаблон</string>
     <string name="wear_new_custom_watchface_exported">Пользовательский шаблон циферблата экспортирован</string>
-    <!-- ADDED: URL без перевода -->
     <string name="wear_link_to_more_cwf_doc">https://androidaps.readthedocs.io/en/latest/ExchangeSiteCustomWatchfaces/index.html</string>
     <string name="resend_all_data">Повторить отправку всех данных</string>
     <string name="open_settings_on_wear">Открыть настройки на часах</string>

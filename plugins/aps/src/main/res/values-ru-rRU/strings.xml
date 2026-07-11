@@ -1,62 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--Autotune-->
-    <!-- FIX: убрано лишнее слово "диапазона", которого нет в оригинале -->
-    <string name="dyn_isf_adjust_title" formatted="false">Коэффициент настройки динамического ISF %</string>
-    <!-- NEW: отсутствовало в предыдущей локализации -->
+    <string name="dyn_isf_adjust_title" formatted="false">Коэффициент регулировки динамического диапазона чувствительности ISF %</string>
     <string name="openapssmb">OpenAPS SMB</string>
     <string name="openaps_smb_dynamic_isf">Динамический ISF</string>
-    <!-- NEW: отсутствовало в предыдущей локализации -->
-    <string name="openaps_auto_isf">Автоматический ISF</string>
-    <!-- FIX: строчная буква → заглавная -->
-    <string name="openapsma_disabled">Модуль не активен</string>
+    <string name="openaps_auto_isf">Auto ISF</string>
+    <string name="openapsma_disabled">модуль не активен</string>
     <string name="openapsma_no_glucose_data">Данные гликемии недоступны</string>
-    <string name="openaps_no_as_data">Данные Autosens недоступны</string>
+    <string name="openaps_no_as_data">Данные autosens недоступны</string>
     <string name="dynisf_shortname">ДинISF</string>
-    <!-- NEW: отсутствовало в предыдущей локализации -->
-    <string name="autoisf_shortname">АвтISF</string>
+    <string name="autoisf_shortname">AUTOISF</string>
     <string name="openapsama">Помощник болюса OpenAPS AMA</string>
-    <!-- FIX: убрано дублирование "Actual актуальная" — смешение EN/RU -->
-    <string name="array_of_elements">Массив %1$d элементов.\nАктуальное значение:</string>
-    <!-- NEW: отсутствовало в предыдущей локализации -->
+    <string name="array_of_elements">Массив %1$d элементов. \nActual актуальная величина:</string>
     <string name="oaps_shortname">OAPS</string>
     <string name="description_ama">Состояние алгоритма в 2017 году</string>
-    <!-- FIX: единообразие — "опытных пользователей" во всех description_smb* строках -->
-    <string name="description_smb">Наиболее актуальный алгоритм для опытных пользователей</string>
-    <string name="description_smb_dynamic_isf">Наиболее актуальный алгоритм для опытных пользователей с динамическим/автоматическим ISF</string>
-    <string name="description_auto_isf">Экспериментальный алгоритм для опытных пользователей с расширениями AutoISF</string>
-
-    <!-- FIX: "Предыдущее" → "Последнее" (last run ≠ previous run) -->
-    <string name="openapsma_last_run_label">Последнее выполнение</string>
+    <string name="description_smb">Самый новый алгоритм для опытных пользователей</string>
+    <string name="description_smb_dynamic_isf">Последний алгоритм для опытных пользователей с динамическим/автоматическим ISF</string>
+    <string name="openapsma_last_run_label">Предыдущее выполнение</string>
     <string name="openapsma_input_parameters_label">Параметры ввода</string>
     <string name="openapsma_glucose_status_label">Состояние гликемии</string>
-    <!-- FIX: добавлена точка после сокращения "врем." -->
-    <string name="openapsma_current_temp_label">Текущий врем. базал</string>
-    <!-- FIX: "активн инс" → "активный инсулин" (расшифровать сокращение) -->
+    <string name="openapsma_current_temp_label">Текущий врем базал</string>
     <string name="openapsma_iob_data_label">Данные IOB (активный инсулин)</string>
     <string name="openapsma_profile_label">Профиль</string>
-    <string name="openapsma_meal_data_label">Данные приёма пищи</string>
-    <!-- FIX: строчная буква → заглавная -->
-    <string name="openapsma_request_label">Запрос</string>
-    <!-- FIX: строчная буква → заглавная -->
-    <string name="constraints">Ограничения</string>
-    <!-- FIX: строчные буквы → заглавные -->
-    <string name="openapsma_autosensdata_label">Данные Autosens</string>
+    <string name="openapsma_meal_data_label">Данные приема пищи</string>
+    <string name="openapsma_request_label">запрос</string>
+    <string name="constraints">ограничения</string>
+    <string name="openapsma_autosensdata_label">данные autosens</string>
     <string name="openapsma_script_debug_data_label">Отладка скрипта</string>
-    <!-- FIX: убран лишний пробел после \n; добавлены запятые для правильной пунктуации -->
-    <string name="openapsama_link_to_preference_json_doc_txt">Внимание!\nОбычно нет необходимости изменять приведённые ниже величины. Нажмите ЗДЕСЬ, ПРОЧТИТЕ и убедитесь, что вы ПОНИМАЕТЕ изложенное, прежде чем менять какую-либо из этих величин.</string>
-
-    <!-- FIX: "базы" → "базала" (полная форма); добавлена запятая -->
-    <string name="increasing_max_basal">Повышаю максимальное значение базала, т.к. оно меньше максимального в профиле</string>
+    <string name="openapsama_link_to_preference_json_doc_txt">Внимание!\n Обычно нет необходимости изменять приведенные ниже величины. Нажмите ЗДЕСЬ, ПРОЧТИТЕ и убедитесь что вы ПОНИМАЕТЕ изложенное прежде чем менять какую-либо из этих величин.</string>
+    <string name="increasing_max_basal">Повышаю максимальное значение базы т. к. оно меньше максимального в профиле</string>
     <string name="max_basal_multiplier">множитель макс базала</string>
     <string name="max_daily_basal_multiplier">множитель макс суточного базала</string>
-    <!-- FIX: "отключен" → "отключён" (с ё) -->
-    <string name="smb_disabled_in_preferences">Супер микро болюс SMB отключён в настройках</string>
-    <!-- FIX: "Непредвиденный" → "Незаявленный" (точный перевод Unannounced); "отключен" → "отключён" -->
-    <string name="uam_disabled_in_preferences">Незаявленный приём пищи UAM отключён в настройках</string>
-    <!-- FIX: "отключен" → "отключён" -->
-    <string name="autosens_disabled_in_preferences">Автоматический подбор чувствительности Autosens отключён в настройках</string>
-
+    <string name="smb_disabled_in_preferences">Супер микро болюс SMB отключен в настройках</string>
+    <string name="uam_disabled_in_preferences">Непредвиденный прием пищи UAM отключен в настройках</string>
+    <string name="autosens_disabled_in_preferences">Автоматический подбор чувствительности Autosens отключен в настройках</string>
     <!--    Verify if needed in safety-->
     <string name="limiting_iob">Ограничение активного инсулина IOB до %1$.1f ед. из-за %2$s</string>
     <string name="maxvalueinpreferences">максимальное значение в настройках</string>
@@ -70,7 +47,7 @@
     <!-- FIX: "минуя супер микро болюс SMB" — неточный перевод "skipping SMB" -->
     <string name="smb_frequency_exceeded">Болюс был введён в течение последних 3 минут, SMB пропущен</string>
     <string name="pump_not_initialized">Помпа не инициализирована!</string>
-    <string name="loop_shortname">ЦИКЛ</string>
+    <string name="loop_shortname">ЗЦ</string>
     <string name="description_loop">Активировать или деактивировать запуск цикла.</string>
     <string name="no_aps_selected">APS не выбран или не выдан результат</string>
     <string name="ignore5m">Игнорировать 5 м</string>
@@ -79,8 +56,7 @@
     <string name="carbs_suggestion">Предложены углеводы</string>
     <string name="open_loop_new_suggestion">Есть новое предложение</string>
     <string name="basal_set_correctly">Базал задан корректно</string>
-    <!-- FIX: "Предыдущее" → "Последнее" -->
-    <string name="last_run_label">Последнее выполнение</string>
+    <string name="last_run_label">Предыдущее выполнение</string>
     <string name="loop_aps_label">Система ИПЖ</string>
     <string name="request_label">Запрос</string>
     <string name="loop_constraints_processed_label">После наложенных ограничений</string>
@@ -101,22 +77,15 @@
     <string name="autotune_profile">Профиль:</string>
     <string name="autotune_last_run">Последнее выполнение:</string>
     <string name="autotune_warning">Внимание:</string>
-    <!-- FIX: "Автоматически будет использоваться" → "Autotune будет использовать" (ближе к оригиналу) -->
-    <string name="autotune_ic_warning">Выбранный профиль имеет %1$d значений IC. Autotune будет использовать %2$.2f г/ед</string>
-    <!-- FIX: добавлен пробел между %2$.1f и %3$s как в оригинале; то же исправление текста -->
-    <string name="autotune_isf_warning">Выбранный профиль имеет %1$d значений ISF. Autotune будет использовать %2$.1f %3$s/ед</string>
-    <!-- FIX: "autotune" → "Autotune" (заглавная буква) -->
-    <string name="autotune_error">Ошибка ввода данных, попробуйте запустить Autotune снова или уменьшить количество дней</string>
+    <string name="autotune_ic_warning">Выбранный профиль имеет %1$d значений IC. Автоматически будет использоваться %2$.2f г/ед</string>
+    <string name="autotune_isf_warning">Выбранный профиль имеет %1$d значений ISF. Автоматически будет использоваться %2$.1f%3$s/ед</string>
+    <string name="autotune_error">Ошибка ввода данных, попробуйте запустить снова autotune или уменьшить количество дней</string>
     <string name="autotune_error_more_days">Ошибка в данных, увеличьте количество дней</string>
-    <!-- FIX: "настройка автоматизации" полностью неверно — EN: "Autotune calculation started" -->
-    <string name="autotune_warning_during_run">Выполняется расчёт Autotune, пожалуйста, подождите</string>
+    <string name="autotune_warning_during_run">Идет настройка автоматизации, ждите</string>
     <string name="autotune_warning_after_run">Перед использованием внимательно проверьте результаты!</string>
-    <!-- FIX: "для расчета" → "настроено ... дней" (EN: "tuned") -->
-    <string name="autotune_partial_result">Частичный результат: настроено %1$d / %2$d дней</string>
+    <string name="autotune_partial_result">Частичный результат дня %1$d / %2$d для расчета</string>
     <string name="autotune_result">Результат: %1$s</string>
     <string name="autotune_param">Парам</string>
-    <!-- CRITICAL FIX: в EN строка содержит только "%", в RU был добавлен несуществующий плейсхолдер %s
-         и неверный текст "Процент Autotune: %s" — это вызывает ошибку в рантайме -->
     <string name="autotune_percent">%</string>
     <string name="autotune_missing">Отсутствует</string>
     <string name="autotune_run">Выполнить Autotune</string>
@@ -129,18 +98,8 @@
     <string name="autotune_update_local_profile_message">Обновить профиль %1$s профилем Autotune?</string>
     <string name="autotune_revert_local_profile_message">Восстановить профиль %1$s с помощью входного профиля?</string>
     <string name="autotune_profile_invalid">Неверный профиль</string>
-    <!-- Нижеследующие строки не требуют перевода (translatable="false") -->
-    <string name="autotune_log_title" translatable="false">|Param|Profile|Tuned|%/Miss.\n</string>
-    <string name="autotune_log_separator" translatable="false">+------------------------------------------\n</string>
-    <string name="autotune_log_peak" translatable="false">| %1$4.4s |\t%2$d |\t%3$d |\n</string>
-    <string name="autotune_log_dia" translatable="false">| %1$4.4s |\t%2$3.1f |\t%3$3.1f |\n</string>
-    <string name="autotune_log_ic_isf" translatable="false">| %1$4.4s | %2$3.3f |\t%3$3.3f |\n</string>
-    <string name="autotune_log_basal" translatable="false">|\t%1$02.0f\t| %2$3.3f |%3$3.3f\t| %5$.0f%% / %4$d\n</string>
-    <string name="autotune_log_sum_basal" translatable="false">|\t∑\t|\t%1$3.1f |\t%2$3.1f |\n</string>
     <string name="pump_disconnected">Помпа отключена</string>
-
     <!--    autoISF -->
     <string name="autoISF_settings_title">Настройки AutoISF</string>
     <string name="smb_delivery_settings_title">Настройки введения микроболюсов SMB</string>
-
 </resources>

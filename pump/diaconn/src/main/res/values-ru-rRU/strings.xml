@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="resetpairing">Сбросить сопряжение</string>
     <string name="diaconn_pairing">Сопражение с помпой Diaconn</string>
     <string name="diaconn_g8_history_alarm">Оповещения</string>
     <string name="diaconn_g8_history_basalhours">Почасовой базал</string>
@@ -22,6 +21,8 @@
     <string name="stoppingextendedbolus">Остановка пролонгированного болюса</string>
     <string name="updatingbasalrates">Обновление значений базала</string>
     <string name="description_pump_diaconn_g8">Интеграция с помпами Diaconn G8</string>
+    <string name="diaconn_g8_pump">Diaconn G8</string>
+    <string name="diaconn_g8_pump_shortname">Diaconn G8</string>
     <string name="maxbolusviolation">Нарушение макс болюса</string>
     <string name="commanderror">Ошибка в команде</string>
     <string name="speederror">Ошибка в скорости</string>
@@ -30,7 +31,7 @@
     <string name="selectedpump">Выбранная помпа</string>
     <string name="bolus_step">Шаг болюса</string>
     <string name="basal_step">Шаг базала</string>
-    <string name="pairfirst">выполните сопряжение помпы с телефоном!</string>
+    <string name="pairfirst">Пожалуйста, выполните сопряжение помпы с телефоном!</string>
     <string name="processinghistory">"Обработка события "</string>
     <string name="diaconn_g8_history_tempbasal">Временный базал</string>
     <string name="diaconng8_pump_settings">Настройки помпы Diaconn</string>
@@ -47,6 +48,9 @@
     <string name="diaconn_g8_pumplang_chiness">Китайский</string>
     <string name="diaconn_g8_pumplang_korean">Корейский</string>
     <string name="diaconn_g8_pumplang_english">Английский</string>
+    <string name="diaconn_g8_pumpscreentimeout_10">10</string>
+    <string name="diaconn_g8_pumpscreentimeout_20">20</string>
+    <string name="diaconn_g8_pumpscreentimeout_30">30</string>
     <string name="injectionblocked">Подача заблокирована</string>
     <string name="batterywarning">Предупреждение о заряде аккумулятора</string>
     <string name="insulinlackwarning">Предупреждение об отсутствии инсулина</string>

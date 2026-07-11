@@ -286,6 +286,7 @@
     <!-- FIX: "поворота мест" → "ротации мест введения" -->
     <string name="pref_title_site_rotation_profile">Профиль пользователя для ротации мест введения</string>
 
+    <!-- Body-type choices for the site-rotation user profile (man / woman / child body silhouette) -->
     <!-- StringKey: General preferences -->
     <string name="pref_title_units">Единицы</string>
     <string name="units_mgdl">мг/дл</string>

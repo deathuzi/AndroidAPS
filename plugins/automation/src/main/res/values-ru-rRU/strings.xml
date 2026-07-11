@@ -40,8 +40,7 @@
     <string name="automation_missing_task_name">Введите название задачи.</string>
     <string name="automation_missing_trigger">Укажите хотя бы один триггер.</string>
     <string name="automation_missing_action">Укажите хотя бы одно действие.</string>
-    <!-- FIX: добавлено двоеточие как в EN "Settings Export: %1$s" -->
-    <string name="exportsettings_message">Экспорт настроек: %1$s</string>
+    <string name="exportsettings_message">Экспорт настроек %1$s</string>
     <string name="export_settings_short">Текст в терапии:</string>
     <string name="alarm_message">Сигнал оповещения: %1$s</string>
     <string name="alarm_short">Сигнал:</string>
@@ -50,8 +49,7 @@
     <string name="profilename">Изменить профиль на</string>
     <string name="changengetoprofilename">Изменить профиль на %1$s</string>
     <string name="automation_trigger_pump_last_connection_label">Последнее соединение с помпой</string>
-    <!-- FIX: добавлен пробел между %2$s и "мин." -->
-    <string name="automation_trigger_pump_last_connection_compared">Последняя связь с помпой %1$s %2$s мин. назад</string>
+    <string name="automation_trigger_pump_last_connection_compared">Последняя связь с помпой %1$s %2$sмин. назад</string>
     <string name="alreadyset">Уже установлено</string>
     <string name="profilepercentage">Процент профиля</string>
     <string name="startprofileforever">Начать профиль %1$d%%</string>
@@ -74,8 +72,7 @@
     <string name="notemptarget">Временная цель не существует</string>
     <string name="temptargetcomparedmgdl">Временная цель %1$s %2$.0f %3$s</string>
     <string name="temptargetcomparedmmol">Временная цель %1$s %2$.1f %3$s</string>
-    <!-- FIX: добавлен знак % и пробел — EN "Profile pct %1$s %2$d" подразумевает процент -->
-    <string name="percentagecompared">Профиль % %1$s %2$d</string>
+    <string name="percentagecompared">Профиль %1$s%2$d</string>
     <string name="iobcompared">Акт инс IOB %1$s %2$.1f</string>
     <string name="or">Или</string>
     <!-- FIX: "Исключая или" → "Исключающее ИЛИ" (логическая операция XOR) -->
@@ -86,9 +83,7 @@
     <!-- FIX: строчная буква → заглавная -->
     <string name="short_avgdelta">Краткосрочная средняя дельта</string>
     <string name="long_avgdelta">Долгосрочная средняя дельта</string>
-    <!-- FIX: "изменение" → "Дельта" (технический термин, строчная → заглавная) -->
-    <string name="delta">Дельта</string>
-    <!-- FIX: убран префикс "Местоположение: " — его нет в EN "%1$s %2$s", добавление ведёт к двойному заголовку в UI -->
+    <string name="delta">изменение</string>
     <string name="locationis">%1$s %2$s</string>
     <string name="location_inside">Когда вы находитесь внутри зоны</string>
     <string name="location_outside">Когда вы вне зоны</string>
@@ -101,33 +96,27 @@
     <string name="temptargetcompared">Врем. цель %1$s</string>
     <string name="btdevicecompared">Подключение Bluetooth к устройству %1$s %2$s</string>
     <string name="btdevice">Соединение с устройством Bluetooth </string>
-    <!-- FIX: убрано лишнее двоеточие — в EN "WiFi SSID %1$s %2$s" его нет -->
     <string name="wifissidcompared">WiFi SSID %1$s %2$s</string>
     <string name="autosenscompared">Автосенс %1$s %2$s %%</string>
     <string name="autosenslabel">Автосенс %</string>
-    <!-- FIX: добавлены пробелы между параметрами — EN "%3$s %1$s %2$s", иначе значения слипаются в UI -->
-    <string name="deltacompared">%3$s %1$s %2$s</string>
-    <!-- FIX: "Гк" → "ГК" -->
+    <string name="deltacompared">%3$s%1$s%2$s</string>
     <string name="deltalabel">Разница ГК</string>
     <string name="currentlocation">Текущее местоположение</string>
     <string name="location">Местоположение</string>
-    <!-- FIX: "Предыдущий болюс" не передаёт смысл "ago" (сколько прошло) -->
-    <string name="lastboluslabel">Время с последнего болюса</string>
+    <string name="lastboluslabel">Предыдущий болюс</string>
     <string name="lastboluscompared">Время болюса %1$s %2$s мин назад</string>
     <!-- FIX: "Активн углеводы" → "Активные углеводы" (полное слово) -->
     <string name="triggercoblabel">Активные углеводы</string>
     <string name="cobcompared">Активные углеводы %1$s %2$.0f</string>
     <string name="triggerHeartRate">Частота сердечных сокращений</string>
-    <!-- FIX: добавлены пробелы — EN "HR %1$s %2$.0f", иначе "ЧСС>120" без пробелов -->
-    <string name="triggerHeartRateDesc">ЧСС %1$s %2$.0f</string>
+    <string name="triggerHeartRateDesc">ЧСС%1$s%2$.0f</string>
     <string name="triggerSensorAgeLabel">Время, отработанное сенсором</string>
     <string name="triggerSensorAgeDesc">Отработанное сенсором время %1$s %2$.1f час</string>
     <string name="triggerCannulaAgeLabel">Время, отработанное катетером помпы</string>
     <string name="triggerCannulaAgeDesc">Отработанное катетером время %1$s %2$.1f час</string>
     <string name="triggerPodChangeLabel">Активация Pod\'а</string>
     <string name="triggerPodChangeDesc">Pod активирован</string>
-    <!-- FIX: "Инсулин проработал" → единый стиль с остальными Age-метками -->
-    <string name="triggerInsulinAgeLabel">Время, отработанное инсулином</string>
+    <string name="triggerInsulinAgeLabel">Инсулин проработал</string>
     <string name="triggerInsulinAgeDesc">Время отработанное инсулином %1$s %2$.1f час</string>
     <string name="triggerPumpBatteryAgeLabel">Время отработанное батареей помпы</string>
     <string name="triggerPumpBatteryAgeDesc">Батарея помпы отработала %1$s %2$.1f час</string>
@@ -143,20 +132,15 @@
     <string name="taskname">Название задачи</string>
     <string name="edit_short">РЕДАКТ</string>
     <string name="preconditions">Предусловия:</string>
-    <!-- FIX: EN singular "User action" → RU должно быть "Действие пользователя" (единственное число) -->
-    <string name="user_action">Действие пользователя</string>
+    <string name="user_action">Действия пользователя</string>
     <string name="system_automation">Автоматизация системы</string>
     <string name="run_automations">Запустить автоматизацию</string>
     <string name="add_automation">Добавить правило</string>
     <string name="stop_processing">Остановить обработку</string>
-
     <!--    Reminders-->
-    <!-- FIX: убран лишний пробел после \n; приведён порядок слов в соответствие с EN -->
-    <string name="time_to_eat">Пора есть!\nЗапустите помощник болюса и повторите расчёт.</string>
-    <!-- FIX: "расчет" → "расчёт" (с ё) -->
-    <string name="time_to_bolus">Пора дать болюс!\nЗапустите помощник болюса и повторите расчёт.</string>
+    <string name="time_to_eat">Пора есть!\n Запустите помощник болюса снова для подсчета.</string>
+    <string name="time_to_bolus">Пора дать болюс!\nЗапустите помощник болюса и повторите расчет.</string>
     <string name="error_setting_reminder">Ошибка при настройке будущего оповещения</string>
-
     <!--    Autotune-->
     <!-- FIX: "автотюн" → "Autotune" (сохранить англоязычный термин с заглавной) -->
     <string name="autotune_profile_name">Профиль Autotune %1$s</string>
@@ -165,25 +149,19 @@
     <string name="autotune_run_with_autoswitch">Autotune выполнен и профиль переключён автоматически</string>
     <string name="autotune_run_with_error">Ошибка во время последнего выполнения Autotune</string>
     <string name="autotune_run_cancelled">Обнаружен другой запуск Autotune, выполнение отменено</string>
-
     <!--    Steps count-->
     <string name="triggerStepsCountLabel">Количество шагов</string>
     <string name="triggerStepsCountDesc">Количество шагов за %1$s минут %2$s %3$.0f</string>
     <string name="triggerStepsCountDropdownLabel">Продолжительность измерения</string>
-
     <!--    SMB mode-->
     <string name="changeSmbState">Включить/выключить SMB</string>
     <string name="changeSmbTo">Изменить SMB на %1$s</string>
     <string name="newSmbMode">Новый режим SMB:</string>
     <string name="on">ВКЛ</string>
     <string name="off">ВЫКЛ</string>
-
     <!--    Map Picker (OpenStreetMap)-->
     <string name="pick_from_map">Выбрать на карте</string>
     <string name="tap_to_select_location">Нажмите на карту для выбора местоположения</string>
     <string name="selected_coords">Выбрано: %1$.6f, %2$.6f</string>
     <!-- Permission rationales -->
-    <string name="permission_location_title">Местоположение</string>
-    <string name="permission_location_description">Необходимо для триггеров автоматизации по местоположению и идентификации сети Wi‑Fi</string>
-    <string name="permission_background_location_description">Необходимо для работы триггеров автоматизации, когда приложение в фоне</string>
 </resources>

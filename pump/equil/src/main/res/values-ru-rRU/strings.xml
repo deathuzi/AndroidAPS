@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="equil_pump_description">Помпа Equil Patch 5.3 или новее </string>
+    <!--  start  -->
     <string name="equil_basal_speed">Базовая скорость базала</string>
     <string name="equil_dressing">Замена резервуара</string>
     <string name="equil_dressing_onkey_msg">Плунжер автоматически перемещается в нижнюю часть резервуара. По достижении нижней части он остановится автоматически. Нажмите \'Остановить\', чтобы прервать при необходимости.</string>
@@ -52,6 +53,7 @@
     <string name="equil_shutdown">Автоматическое отключение Equil</string>
     <string name="equil_common_history_tbr_value">Баз Скорость: %1$.2f ед/ч, Продолжительность: %2$d мин</string>
     <string name="equil_common_history_bolus_value">%1$.2f ед</string>
+    <!-- equil - Commands -->
     <string name="equil_common_cmd_set_bolus">Настроить болюс</string>
     <string name="equil_common_cmd_cancel_bolus">Отменить болюс</string>
     <string name="equil_common_cmd_set_tbr">Установить временный базал</string>
@@ -65,6 +67,7 @@
     <string name="equil_common_cmd_unpair">Выполнить разъединение с Equil</string>
     <string name="equil_common_cmd_set_extended_bolus">Настроить пролонгированный болюс</string>
     <string name="equil_common_cmd_cancel_extended_bolus">Отменить пролонгированный болюс</string>
+    <!--    推杆回退-->
     <string name="equil_common_change_insulin">Начать втягивание стержни</string>
     <string name="equil_common_set_alarm_tone">Настроить только звук уведомления</string>
     <string name="equil_common_set_alarm_shake">Настроить только вибрацию</string>
@@ -116,6 +119,24 @@
     <string name="equil_common_composite_time">%1$s и %2$s</string>
     <string name="equil_common_wizard_exit_confirmation_text">Еще Не выполнены все шаги. Действительно хотите выйти?</string>
     <string name="equil_common_wizard_exit_confirmation_title">Выйти</string>
+    <plurals name="equil_common_minutes">
+        <item quantity="one">%1$d минута</item>
+        <item quantity="few">%1$d минуты</item>
+        <item quantity="many">%1$d минут</item>
+        <item quantity="other">%1$d мин</item>
+    </plurals>
+    <plurals name="equil_common_hours">
+        <item quantity="one">%1$d час</item>
+        <item quantity="few">%1$d часа</item>
+        <item quantity="many">%1$d часов</item>
+        <item quantity="other">%1$d час</item>
+    </plurals>
+    <plurals name="equil_common_days">
+        <item quantity="one">%1$d день</item>
+        <item quantity="few">%1$d дня</item>
+        <item quantity="many">%1$d дней</item>
+        <item quantity="other">%1$d дн</item>
+    </plurals>
     <string name="equil_support_error">Версия прошивки слишком мала. Не поддерживается</string>
     <string name="equil_password_tips">Опционально установите пароль для сопряжения с помпой Equil v5.3. Этот пароль также будет использоваться для отключения в будущем, поэтому обязательно запомните его. Правило пароля: он должен состоять из 4 символов, выбранных из ABCDEF0123456789.</string>
     <string name="equil_set_pair_password">Установите пароль сопряжения</string>
@@ -124,7 +145,6 @@
     <string name="equil_device_unpaired">Устройство разъединено</string>
     <string name="equil_assemble">Соберите помпу, резервуар и заряженную батарею</string>
     <string name="equil_devices_number">Введите идентификационный номер новой помпы</string>
-    <string name="equil_pair_password_title">Введите пароль для %1$s</string>
     <string name="equil_insert">Выполните заполнение до появления капли инсулина на кончике иглы</string>
     <string name="equil_insert2">Помпа не должна находиться на платформе.</string>
     <string name="equil_attach">Присоедините помпу к платформе</string>
@@ -133,4 +153,5 @@
     <string name="equil_replace_reservoir">Резервуар пуст. Замените резервуар</string>
     <string name="error_mustbe6hexadidits">Должно быть 6 символов: из этих: ABCDEF0123456789</string>
     <string name="equil_removed_anyway">Ошибка при выполнении команды Разъединить. Помпа будет удалена в любом случае. Пароль, установленный при сопряжении, не удаляется из помпы.</string>
+    <string name="equil_pair_password_title">Введите пароль для %1$s</string>
 </resources>
